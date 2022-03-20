@@ -39,7 +39,10 @@
   ======================================================== -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://code.highcharts.com/highcharts.js"></script>
-  <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+<script src="https://code.highcharts.com/highcharts-3d.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
 </head>
 
 <body>
@@ -834,9 +837,18 @@
                     ><b>Select Program</b></label>
                     <select class="form-select-sm" aria-label="Default select example">
                       <option selected>All</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
+                      <option value="1">Applied Arts and Crafts</option>
+                      <option value="2">Architecture and Town Planning</option>
+                      <option value="3">Architecture and Planning</option>
+                      <option value="4">Architecture</option>
+                      <option value="5">Planning</option>
+                      <option value="6">Design</option>
+                      <option value="7">Town Planning</option>
+                      <option value="8">Engineering and Technology</option>
+                      <option value="9">Management</option>
+                      <option value="10">MCA</option>
+                      <option value="11">Pharmacy</option>
+                      <option value="12">Hotel Management and Catering</option>
                     </select>
                   </div>
                 </div>
@@ -967,7 +979,7 @@
                 </div>
                 <!-- row 7 -->
                 <div class="row">
-                  <div class="col-md-5"></div>
+                  <div class="col-md-4"></div>
                   <div class="col-md-4">
                     <button type="button" id="filter-btn" class="btn btn-outline-primary">
                       Search
@@ -985,26 +997,27 @@
             <!-- 3D Chart -->
           
               <div class="card" id="3d-card">
-                <div id="container"
-                 style="height: 550px;"
-                 ></div>
-                <div id="sliders">
-                  <table>
-                    <tr>
-                      <td>Alpha Angle</td>
-                      <td>
-                        <input id="R0" type="range" min="0" max="45" value="15" />
-                        <span id="R0-value" class="value"></span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Beta Angle</td>
-                      <td>
-                        <input id="R1" type="range" min="0" max="45" value="15" />
-                        <span id="R1-value" class="value"></span>
-                      </td>
-                    </tr>
-                  </table>
+                <figure class="highcharts-figure">
+                  <div id="container"></div>
+                 
+                  <div id="sliders">
+                    <table>
+                      <tbody><tr>
+                        <td><label for="beta">X-axis</label></td>
+                        <td><input id="beta" type="range" min="-45" max="45" value="15"> <span id="beta-value" class="value"></span></td>
+                     
+                      </tr>
+                      <tr>
+                        <td><label for="alpha">Y-axis</label></td>
+                        <td><input id="alpha" type="range" min="0" max="45" value="15"> <span id="alpha-value" class="value"></span></td>                       
+                      </tr>
+                      <tr>
+                        <td><label for="depth">Zoom</label></td>
+                        <td><input id="depth" type="range" min="20" max="100" value="50"> <span id="depth-value" class="value"></span></td>
+                      </tr>
+                    </tbody></table>
+                  </div>
+                </figure>
                 </div>
                 <!-- graph data -->
               </div>
@@ -1101,80 +1114,32 @@
 
         <!-- 3D GRAPH SCRIPT -->
         <script>
-          Highcharts.chart("container", {
-            chart: {
-              type: "column",
-              options3d: {
-                enabled: true,
-                alpha: 15,
-                beta: 15,
-                viewDistance: 25,
-                depth: 40,
-              },
-            },
-
-            title: {
-              text: "Male, Female and minority distribution among the placed candidates",
-            },
-
-            xAxis: {
-              categories: ['Architecture', 'Planning', 'Design', 'Engineering', 'Management', 'MCA', 'Pharmacy', 'Hotel Management'],
-              labels: {
-                skew3d: true,
-                style: {
-                  fontSize: "16px",
-                },
-              },
-            },
-
-            yAxis: {
-              allowDecimals: false,
-              min: 0,
-              title: {
-                text: "Number of fruits",
-                skew3d: true,
-              },
-            },
-
-            tooltip: {
-              headerFormat: "<b>{point.key}</b><br>",
-              pointFormat:
-                '<span style="color:{series.color}">\u25CF</span> {series.name}: {point.y} / {point.stackTotal}',
-            },
-
-            plotOptions: {
-              column: {
-                depth: 40,
-                grouping: false,
-              },
-            },
-
-            // series: [
-            //   {
-            //     name: "John",
-            //     data: [5, 3, 4, 7, 2],
-            //     stack: "male",
-            //   },
-            //   {
-            //     name: "Joe",
-            //     data: [3, 4, 4, 2, 5],
-            //     stack: "male",
-            //   },
-            //   {
-            //     name: "Jane",
-            //     data: [2, 5, 6, 2, 1],
-            //     stack: "female",
-            //   },
-            //   {
-            //     name: "Janet",
-            //     data: [3, 0, 4, 4, 3],
-            //     stack: "female",
-            //   },
-            // ],
-
-            series:[
-              
-              
+         // Set up the chart
+const chart = new Highcharts.Chart({
+  chart: {
+    renderTo: 'container',
+    type: 'column',
+    options3d: {
+      enabled: true,
+      alpha: 4,
+      beta: 36,
+      depth: 100,
+      viewDistance: 25
+    }
+  },
+  title: {
+    text: 'Chart rotation demo'
+  },
+  subtitle: {
+    text: 'Test options by dragging the sliders below'
+  },
+  plotOptions: {
+    column: {
+      depth: 25,
+      grouping: false
+    }
+  },
+  series:[            
               {
                 name: "Minority",
                 data: [0, 1, 1, 0, 1, 1],
@@ -1189,10 +1154,30 @@
                 name: "Male",
                 data: [1, 3, 2, 5, 2, 1],
                 stack: "a",
-              }
+              },
+              {
+                name: "Placed",
+                data: [1, 5, 3, 7, 3, 2],
+                stack: "c",
+              },
 
             ]
-          });
+});
+
+function showValues() {
+  document.getElementById('alpha-value').innerHTML = chart.options.chart.options3d.alpha;
+  document.getElementById('beta-value').innerHTML = chart.options.chart.options3d.beta;
+  document.getElementById('depth-value').innerHTML = chart.options.chart.options3d.depth;
+}
+
+// Activate the sliders
+document.querySelectorAll('#sliders input').forEach(input => input.addEventListener('input', e => {
+  chart.options.chart.options3d[e.target.id] = parseFloat(e.target.value);
+  showValues();
+  chart.redraw(false);
+}));
+
+showValues();
         </script>
 </body>
 
