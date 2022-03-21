@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-  <title>Dashboard - NiceAdmin Bootstrap Template</title>
+  <title>Campus Placement Template</title>
   <meta content="" name="description" />
   <meta content="" name="keywords" />
 
@@ -37,6 +37,12 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script> 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.4.0/dist/chartjs-plugin-datalabels.min.js"></script> -->
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/highcharts-3d.js"></script>
@@ -51,13 +57,13 @@
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="" />
-        <span class="d-none d-lg-block">NiceAdmin</span>
+        <span class="d-none d-lg-block">Campus Placement</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div>
     <!-- End Logo -->
 
-    <div class="search-bar">
+    <!-- <div class="search-bar">
       <form class="search-form d-flex align-items-center" method="POST" action="#">
         <input type="text" name="query" placeholder="Search" title="Enter search keyword" />
         <button type="submit" title="Search">
@@ -65,7 +71,7 @@
         </button>
       </form>
     </div>
-    <!-- End Search Bar -->
+    End Search Bar -->
 
     <nav class="header-nav ms-auto">
       <ul class="d-flex align-items-center">
@@ -149,12 +155,12 @@
         </li>
         <!-- End Notification Nav -->
 
-        <li class="nav-item dropdown">
+        <!-- <li class="nav-item dropdown">
           <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
             <i class="bi bi-chat-left-text"></i>
             <span class="badge bg-success badge-number">3</span> </a><!-- End Messages Icon -->
 
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+          <!-- <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
             <li class="dropdown-header">
               You have 3 new messages
               <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
@@ -217,15 +223,15 @@
             <li class="dropdown-footer">
               <a href="#">Show all messages</a>
             </li>
-          </ul>
+          </ul> -->
           <!-- End Messages Dropdown Items -->
-        </li>
+        <!-- </li> --> 
         <!-- End Messages Nav -->
 
         <li class="nav-item dropdown pe-3">
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle" />
-            <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span> </a><!-- End Profile Iamge Icon -->
+            <img src="assets/img/aicteLogo.png" alt="Profile" class="rounded-circle" />
+            <span class="d-none d-md-block dropdown-toggle ps-2">AICTE</span> </a><!-- End Profile Iamge Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
@@ -288,7 +294,7 @@
       <li class="nav-item">
         <a class="nav-link" href="index.html">
           <i class="bi bi-grid"></i>
-          <span>Dashboard</span>
+          <span>AICTE Dashboard</span>
         </a>
       </li>
       <!-- End Dashboard Nav -->
@@ -544,7 +550,7 @@
     <section class="section dashboard">
       <div class="col-lg-12">
         <div class="row">
-          <div class="row" style="flex-wrap: nowrap; overflow-x: scroll;">
+          <div class="row" style=" justify-content: center;">
 
             <!-- stats row --
     
@@ -570,7 +576,7 @@
 
                 <div class="card-body">
                   <h5 class="card-title">Total Institutions
-                    <span>| 2021</span>
+                    <span>| 2020</span>
                   </h5>
 
                   <div class="d-flex align-items-center">
@@ -581,8 +587,49 @@
                     </div>
                     <div class="ps-3">
                       <h6>8999</h6>
-                      <span class="text-success small pt-1 fw-bold">12%</span> <span
-                        class="text-muted small pt-2 ps-1">increase</span>
+                      <!-- <span class="text-success small pt-1 fw-bold">12%</span> <span
+                        class="text-muted small pt-2 ps-1">increase</span> -->
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End Sales Card -->
+
+
+
+            <div class="col-xxl-3 col-md-4">
+              <div class="card info-card sales-card">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Total Students
+                    <span>| 2020</span>
+                  </h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <!-- <i class="bi bi-cart"></i> -->
+                      <i class="bi bi-people"></i>
+
+                    </div>
+                    <div class="ps-3">
+                      <h6>21M</h6>
+                      <!-- <span class="text-success small pt-1 fw-bold">12%</span> <span
+                        class="text-muted small pt-2 ps-1">increase</span> -->
 
                     </div>
                   </div>
@@ -609,7 +656,7 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Placed <span>| 2021</span></h5>
+                  <h5 class="card-title">Placed <span>| 2020</span></h5>
 
                   <div class="d-flex align-items-center">
                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
@@ -618,9 +665,9 @@
 
                     </div>
                     <div class="ps-3">
-                      <h6>#</h6>
-                      <span class="text-success small pt-1 fw-bold">12%</span> <span
-                        class="text-muted small pt-2 ps-1">increase</span>
+                      <h6>16M</h6>
+                      <!-- <span class="text-success small pt-1 fw-bold">12%</span> <span
+                        class="text-muted small pt-2 ps-1">increase</span> -->
 
                     </div>
                   </div>
@@ -646,7 +693,7 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Male <span>| 2021</span></h5>
+                  <h5 class="card-title">Male <span>| 2020</span></h5>
 
                   <div class="d-flex align-items-center">
                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
@@ -655,9 +702,9 @@
 
                     </div>
                     <div class="ps-3">
-                      <h6>#</h6>
-                      <span class="text-success small pt-1 fw-bold">12%</span> <span
-                        class="text-muted small pt-2 ps-1">increase</span>
+                      <h6>17M</h6>
+                      <!-- <span class="text-success small pt-1 fw-bold">12%</span> <span
+                        class="text-muted small pt-2 ps-1">increase</span> -->
 
                     </div>
                   </div>
@@ -684,7 +731,7 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Female <span>| 2021</span></h5>
+                  <h5 class="card-title">Female <span>| 2020</span></h5>
 
                   <div class="d-flex align-items-center">
                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
@@ -693,9 +740,9 @@
                       <!-- <i class="bi bi-currency-dollar"></i> -->
                     </div>
                     <div class="ps-3">
-                      <h6>#</h6>
-                      <span class="text-success small pt-1 fw-bold">8%</span> <span
-                        class="text-muted small pt-2 ps-1">increase</span>
+                      <h6>4M</h6>
+                      <!-- <span class="text-success small pt-1 fw-bold">8%</span> <span
+                        class="text-muted small pt-2 ps-1">increase</span> -->
 
                     </div>
                   </div>
@@ -725,16 +772,16 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Minority <span>| 2021</span></h5>
+                  <h5 class="card-title">Minority <span>| 2020</span></h5>
 
                   <div class="d-flex align-items-center">
                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
                       <i class="bi bi-people"></i>
                     </div>
                     <div class="ps-3">
-                      <h6>#</h6>
-                      <span class="text-danger small pt-1 fw-bold">12%</span> <span
-                        class="text-muted small pt-2 ps-1">decrease</span>
+                      <h6>1M</h6>
+                      <!-- <span class="text-danger small pt-1 fw-bold">12%</span> <span
+                        class="text-muted small pt-2 ps-1">decrease</span> -->
 
                     </div>
                   </div>
@@ -761,7 +808,7 @@
 
 
             <div class="col-lg-6">
-            <div class="card">
+            <div class="card" style="height: 490.6px;">
 
 
               <div class="card-body">
@@ -769,30 +816,55 @@
     
                 <!-- Pie Chart -->
                 <canvas id="pieChart" style="max-height: 400px;"></canvas>
+
+
                 <script>
                   document.addEventListener("DOMContentLoaded", () => {
                     new Chart(document.querySelector('#pieChart'), {
                       type: 'pie',
                       data: {
                         labels: [
-                          'Architecture', 'Planning', 'Design', 'Engineering', 'Management', 'MCA',
+                          'BE/BTech', 'MBA', 'Architecture', 'BCom', 'BSc', 'MCA', 'Polytechnic', 'BPharma'
                           // 'Pharmacy', 'Hotel Management'
                         ],
                         datasets: [{
                           label: 'My First Dataset',
-                          data: [300, 50, 100, 25, 80, 12],
-                          backgroundColor: [
+                          data: [20,10,30,10,5,10,10,5],
+                         backgroundColor: [
                             'rgb(255, 99, 132)',
     
                             'rgb(255, 205, 86)',
     
                             'rgb(75, 192, 192)',
                             'rgb(201, 203, 207)',
-                            'rgb(54, 162, 235)',
-                            'rgb(299, 255, 190)'
+                            'rgb(233,200,145)',
+                            'rgb(191, 255, 240)',
+                            'rgb(197, 216, 164)',
+                            'rgb(187, 153, 129)'
                           ],
-                          hoverOffset: 4
+                          hoverOffset: 4,
+                          borderColor: "#fff"
                         }]
+                      },
+                      options: {
+                                   tooltips: {
+                                    enabled: false
+                                  },
+                                  plugins: {
+                                    datalabels: {
+                                      formatter: (value, ctx) => {
+                                        let datasets = ctx.chart.data.datasets;
+                                        if (datasets.indexOf(ctx.dataset) === datasets.length - 1) {
+                                          let sum = datasets[0].data.reduce((a, b) => a + b, 0);
+                                          let percentage = Math.round((value / sum) * 100) + '%';
+                                          return percentage;
+                                        } else {
+                                          return percentage;
+                                        }
+                                      },
+                                      color: '#fff',
+                                    }
+                                  }
                       }
                     });
                   });
@@ -800,7 +872,7 @@
                 <!-- End Pie CHart -->
     
                 <div class="card-body pb-0">
-                  <h5 class="card-title">Website Traffic <span>| Today</span></h5>
+                  <!-- <h5 class="card-title">Website Traffic <span>| Today</span></h5> -->
     
     
                 </div><!-- End Right side columns -->
@@ -811,7 +883,7 @@
             <!-- Filter -->
             <div class="col-lg-6">
               <div class="card"
-              style="height:550px;"
+              style="height: 490.6px;"
               
               id="filter-card">
                 <!-- row 1 -->
@@ -965,7 +1037,7 @@
                       <option value="1">Yes</option>
                     </select>
                   </div>
-                  <div class="col-md-6">
+                  <!-- <div class="col-md-6">
                     <label for="year"
                     style="display: block;"
                     ><b>Year</b></label>
@@ -975,13 +1047,15 @@
                       <option value="2">Two</option>
                       <option value="3">Three</option>
                     </select>
-                  </div>
+                  </div> -->
                 </div>
                 <!-- row 7 -->
                 <div class="row">
                   <div class="col-md-4"></div>
                   <div class="col-md-4">
-                    <button type="button" id="filter-btn" class="btn btn-outline-primary">
+                    <button type="button" id="filter-btn" class="btn btn-outline-primary"
+                      style="margin-top: 0;"  
+                    >
                       Search
                     </button>
                   </div>
@@ -1055,18 +1129,27 @@
                       datasets: [
                       {
                           label: "Employed",
-                          backgroundColor: "lightgreen",
+                          backgroundColor:  'rgb(54, 162, 235)',
                           borderColor: "green",
                           borderWidth: 1,
                           data: [10,7,4,6,9,7,3,10]
                         },
                         {
                           label: "Unemployed",
-                          backgroundColor: "pink",
+                          backgroundColor: 'rgb(255, 205, 86)',
                           borderColor: "red",
                           borderWidth: 1,
                           data: [3, 5, 6, 7,3, 5, 6, 7]
                         }
+
+                        // 'rgb(255, 99, 132)',
+    
+                        //     'rgb(255, 205, 86)',
+    
+                        //     'rgb(75, 192, 192)',
+                        //     'rgb(201, 203, 207)',
+                        //     'rgb(54, 162, 235)',
+                        //     'rgb(299, 255, 190)'
             
                       
                     
@@ -1112,6 +1195,60 @@
         <!-- Template Main JS File -->
         <script src="assets/js/main.js"></script>
 
+
+        <!-- pie chart script -->
+<!-- <script>
+  var ctx = document.getElementById("pieChart").getContext('2d');
+</script> -->
+
+<!-- <script type="text/javascript">
+  window.onload=function(){/*  ww  w  .j a va2s . com*/
+var data = [{
+ data: [50, 55, 60, 33],
+ labels: ["India", "China", "US", "Canada"],
+ backgroundColor: [
+   "#4b77a9",
+   "#5f255f",
+   "#d21243",
+   "#B27200"
+ ],
+ borderColor: "#fff"
+}];
+var options = {
+ tooltips: {
+   enabled: false
+ },
+ plugins: {
+   datalabels: {
+     formatter: (value, ctx) => {
+       let datasets = ctx.chart.data.datasets;
+       if (datasets.indexOf(ctx.dataset) === datasets.length - 1) {
+         let sum = datasets[0].data.reduce((a, b) => a + b, 0);
+         let percentage = Math.round((value / sum) * 100) + '%';
+         return percentage;
+       } else {
+         return percentage;
+       }
+     },
+     color: '#fff',
+   }
+ }
+};
+var ctx = document.getElementById("pieChart").getContext('2d');
+var myChart = new Chart(ctx, {
+ type: 'pie',
+ data: {
+     datasets: data
+   },
+   options: options
+ });
+    }
+
+      </script>  -->
+
+
+
+
         <!-- 3D GRAPH SCRIPT -->
         <script>
          // Set up the chart
@@ -1128,11 +1265,18 @@ const chart = new Highcharts.Chart({
     }
   },
   title: {
-    text: 'Chart rotation demo'
+    text: 'Year vs Employability by diversity'
   },
   subtitle: {
-    text: 'Test options by dragging the sliders below'
+    // text: 'Test options by dragging the sliders below'
   },
+  xAxis: {
+
+               categories: ['2014-15', '2015-16', '2016-17', '2017-18', '2018-19', '2020-21']
+            },
+       yAxis : {
+               categories: ['0M', '2M', '4M', '6M', '8M', '10M','12M','14M']
+       },
   plotOptions: {
     column: {
       depth: 25,
