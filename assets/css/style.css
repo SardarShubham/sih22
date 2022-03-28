@@ -1246,3 +1246,14 @@ h6 {
 }
 
 /* drag and drop end */
+/* map css */
+.chart--container {
+  min-height: 530px;
+  width: 100%;
+  height: 100%;
+}
+
+.zc-ref {
+  display: none;
+}
+/* map css */
