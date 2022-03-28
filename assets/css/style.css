@@ -1131,3 +1131,18 @@ h6 {
   padding-right: 1em;
   white-space: nowrap;
 }
+
+
+
+.drag__container{
+  border: 1px dashed #4154f1;
+  background-color:#a5c5fe;
+  border-radius: 22px;
+  
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  gap: 50px;
+}
