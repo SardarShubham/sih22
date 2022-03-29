@@ -44,14 +44,11 @@
   <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/highcharts-3d.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
-<script src="https://code.highcharts.com/modules/export-data.js"></script>
-<script src="https://code.highcharts.com/modules/accessibility.js"></script>
-<script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"
-    ></script>
+  <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
 </head>
 
 <body>
@@ -77,7 +74,7 @@
     End Search Bar -->
 
     <nav class="header-nav ms-auto">
-      <ul class="navbar d-flex align-items-center">
+      <ul class="nav d-flex align-items-center">
         <li class="nav-item d-block d-lg-none">
           <a class="nav-link nav-icon search-bar-toggle" href="#">
             <i class="bi bi-search"></i>
@@ -86,8 +83,14 @@
         <!-- End Search Icon-->
 
         <li class="nav-item">
-          <a class="nav-link" style="color: black;" href="https://campusplacement.netlify.app/unemp.html">
+          <a class="nav-link" href="https://campusplacement.netlify.app/unemp.html">
             Reasons of Unemployment
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" href="https://campusplacement.netlify.app/aicte.html">
+            Dashboard
           </a>
         </li>
 
@@ -170,7 +173,7 @@
         </li>
         <!-- End Notification Nav -->
 
-       
+
         <li class="nav-item dropdown pe-3">
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
             <img src="assets/img/aicteLogo.png" alt="Profile" class="rounded-circle" />
@@ -231,7 +234,7 @@
   </header>
   <!-- End Header -->
 
-  
+
 
   <!-- ======= Sidebar ======= -->
   <aside id="sidebar" class="sidebar">
@@ -755,90 +758,85 @@
 
 
             <div class="col-lg-6">
-            <div class="card" style="height: 490.6px;">
+              <div class="card" style="height: 490.6px;">
 
 
-              <div class="card-body">
-                <h5 class="card-title">Unemployability Distribution</h5>
-    
-                <!-- Pie Chart -->
-                <canvas id="pieChart" style="max-height: 400px;"></canvas>
+                <div class="card-body">
+                  <h5 class="card-title">Unemployability Distribution</h5>
+
+                  <!-- Pie Chart -->
+                  <canvas id="pieChart" style="max-height: 400px;"></canvas>
 
 
-                <script>
-                  document.addEventListener("DOMContentLoaded", () => {
-                    new Chart(document.querySelector('#pieChart'), {
-                      type: 'pie',
-                      data: {
-                        labels: [
-                          'BE/BTech', 'MBA', 'Architecture', 'BCom', 'BSc', 'MCA', 'Polytechnic', 'BPharma'
-                          // 'Pharmacy', 'Hotel Management'
-                        ],
-                        datasets: [{
-                          label: 'My First Dataset',
-                          data: [20,10,30,10,5,10,10,5],
-                         backgroundColor: [
-                            'rgb(255, 99, 132)',
-    
-                            'rgb(255, 205, 86)',
-    
-                            'rgb(75, 192, 192)',
-                            'rgb(201, 203, 207)',
-                            'rgb(233,200,145)',
-                            'rgb(191, 255, 240)',
-                            'rgb(197, 216, 164)',
-                            'rgb(187, 153, 129)'
+                  <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                      new Chart(document.querySelector('#pieChart'), {
+                        type: 'pie',
+                        data: {
+                          labels: [
+                            'BE/BTech', 'MBA', 'Architecture', 'BCom', 'BSc', 'MCA', 'Polytechnic', 'BPharma'
+                            // 'Pharmacy', 'Hotel Management'
                           ],
-                          hoverOffset: 4,
-                          borderColor: "#fff"
-                        }]
-                      },
-                      options: {
-                                   tooltips: {
-                                    enabled: false
-                                  },
-                                  plugins: {
-                                    datalabels: {
-                                      formatter: (value, ctx) => {
-                                        let datasets = ctx.chart.data.datasets;
-                                        if (datasets.indexOf(ctx.dataset) === datasets.length - 1) {
-                                          let sum = datasets[0].data.reduce((a, b) => a + b, 0);
-                                          let percentage = Math.round((value / sum) * 100) + '%';
-                                          return percentage;
-                                        } else {
-                                          return percentage;
-                                        }
-                                      },
-                                      color: '#fff',
-                                    }
-                                  }
-                      }
+                          datasets: [{
+                            label: 'My First Dataset',
+                            data: [20, 10, 30, 10, 5, 10, 10, 5],
+                            backgroundColor: [
+                              'rgb(255, 99, 132)',
+
+                              'rgb(255, 205, 86)',
+
+                              'rgb(75, 192, 192)',
+                              'rgb(201, 203, 207)',
+                              'rgb(233,200,145)',
+                              'rgb(191, 255, 240)',
+                              'rgb(197, 216, 164)',
+                              'rgb(187, 153, 129)'
+                            ],
+                            hoverOffset: 4,
+                            borderColor: "#fff"
+                          }]
+                        },
+                        options: {
+                          tooltips: {
+                            enabled: false
+                          },
+                          plugins: {
+                            datalabels: {
+                              formatter: (value, ctx) => {
+                                let datasets = ctx.chart.data.datasets;
+                                if (datasets.indexOf(ctx.dataset) === datasets.length - 1) {
+                                  let sum = datasets[0].data.reduce((a, b) => a + b, 0);
+                                  let percentage = Math.round((value / sum) * 100) + '%';
+                                  return percentage;
+                                } else {
+                                  return percentage;
+                                }
+                              },
+                              color: '#fff',
+                            }
+                          }
+                        }
+                      });
                     });
-                  });
-                </script>
-                <!-- End Pie CHart -->
-    
-                <div class="card-body pb-0">
-                  <!-- <h5 class="card-title">Website Traffic <span>| Today</span></h5> -->
-    
-    
-                </div><!-- End Right side columns -->
+                  </script>
+                  <!-- End Pie CHart -->
+
+                  <div class="card-body pb-0">
+                    <!-- <h5 class="card-title">Website Traffic <span>| Today</span></h5> -->
+
+
+                  </div><!-- End Right side columns -->
+                </div>
+
               </div>
-    
-            </div>
             </div>
             <!-- Filter -->
             <div class="col-lg-6">
-              <div class="card"
-              style="height: 490.6px;"
-              
-              id="filter-card">
+              <div class="card" style="height: 490.6px;" id="filter-card">
                 <!-- row 1 -->
                 <div class="row">
                   <div class="col-md-6">
-                    <label for="year"
-                    style="display: block;"
-                    ><b>Year</b></label>
+                    <label for="year" style="display: block;"><b>Year</b></label>
                     <select class="form-select-sm" aria-label="Default select example">
                       <option selected>All</option>
                       <option value="1">2021-2022</option>
@@ -850,10 +848,7 @@
                     </select>
                   </div>
                   <div class="col-md-6">
-                    <label for="year"
-                    style="display: block;"
-
-                    ><b>Select Program</b></label>
+                    <label for="year" style="display: block;"><b>Select Program</b></label>
                     <select class="form-select-sm" aria-label="Default select example">
                       <option selected>All</option>
                       <option value="1">Applied Arts and Crafts</option>
@@ -875,9 +870,7 @@
                 <!-- row 2 -->
                 <div class="row">
                   <div class="col-md-6">
-                    <label for="year"
-                    style="display: block;"
-                    ><b>Select level</b></label>
+                    <label for="year" style="display: block;"><b>Select level</b></label>
                     <select class="form-select-sm" aria-label="Default select example">
                       <option selected>All</option>
                       <option value="1">UG</option>
@@ -886,9 +879,7 @@
                     </select>
                   </div>
                   <div class="col-md-6">
-                    <label for="year"
-                    style="display: block;"
-                    ><b>Institute Type</b></label>
+                    <label for="year" style="display: block;"><b>Institute Type</b></label>
                     <select class="form-select-sm" aria-label="Default select example">
                       <option selected>All</option>
                       <option value="1">Private</option>
@@ -917,9 +908,7 @@
                 <!-- row 3 -->
                 <div class="row">
                   <div class="col-md-6">
-                    <label for="year"
-                    style="display: block;"
-                    ><b>Select State</b></label>
+                    <label for="year" style="display: block;"><b>Select State</b></label>
                     <select class="form-select-sm" aria-label="Default select example">
                       <option selected>All</option>
                       <!--- India states -->
@@ -963,9 +952,7 @@
                     </select>
                   </div>
                   <div class="col-md-6">
-                    <label for="year"
-                    style="display: block;"
-                    ><b>Minority</b></label>
+                    <label for="year" style="display: block;"><b>Minority</b></label>
                     <select class="form-select-sm" aria-label="Default select example">
                       <option selected>All</option>
                       <option value="1">Yes</option>
@@ -976,9 +963,7 @@
                 <!-- row 4 -->
                 <div class="row">
                   <div class="col-md-6">
-                    <label for="year"
-                    style="display: block;"
-                    ><b>Women</b></label>
+                    <label for="year" style="display: block;"><b>Women</b></label>
                     <select class="form-select-sm" aria-label="Default select example">
                       <option selected>All</option>
                       <option value="1">Yes</option>
@@ -1000,9 +985,7 @@
                 <div class="row">
                   <div class="col-md-4"></div>
                   <div class="col-md-4">
-                    <button type="button" id="filter-btn" class="btn btn-outline-primary"
-                      style="margin-top: 0;"  
-                    >
+                    <button type="button" id="filter-btn" class="btn btn-outline-primary" style="margin-top: 0;">
                       Search
                     </button>
                   </div>
@@ -1015,318 +998,265 @@
 
 
         <div class="col-lg-12">
-            <!-- 3D Chart -->
-          
-              <div class="card" id="3d-card">
-                <figure class="highcharts-figure">
-                  <div id="container"></div>
-                 
-                  <div id="sliders">
-                    <table>
-                      <tbody><tr>
-                        <td><label for="beta">X-axis</label></td>
-                        <td><input id="beta" type="range" min="-45" max="45" value="15"> <span id="beta-value" class="value"></span></td>
-                     
-                      </tr>
-                      <tr>
-                        <td><label for="alpha">Y-axis</label></td>
-                        <td><input id="alpha" type="range" min="0" max="45" value="15"> <span id="alpha-value" class="value"></span></td>                       
-                      </tr>
-                      <tr>
-                        <td><label for="depth">Zoom</label></td>
-                        <td><input id="depth" type="range" min="20" max="100" value="50"> <span id="depth-value" class="value"></span></td>
-                      </tr>
-                    </tbody></table>
-                  </div>
-                </figure>
-                </div>
-                <!-- graph data -->
+          <!-- 3D Chart -->
+
+          <div class="card" id="3d-card">
+            <figure class="highcharts-figure">
+              <div id="container"></div>
+
+              <div id="sliders">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><label for="beta">X-axis</label></td>
+                      <td><input id="beta" type="range" min="-45" max="45" value="15"> <span id="beta-value"
+                          class="value"></span></td>
+
+                    </tr>
+                    <tr>
+                      <td><label for="alpha">Y-axis</label></td>
+                      <td><input id="alpha" type="range" min="0" max="45" value="15"> <span id="alpha-value"
+                          class="value"></span></td>
+                    </tr>
+                    <tr>
+                      <td><label for="depth">Zoom</label></td>
+                      <td><input id="depth" type="range" min="20" max="100" value="50"> <span id="depth-value"
+                          class="value"></span></td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-    
+            </figure>
+          </div>
+          <!-- graph data -->
         </div>
 
+      </div>
 
-        <div class="col-12">
-          <div class="card">
 
-            <div class="filter">
-              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                <li class="dropdown-header text-start">
-                  <h6>Filter</h6>
-                </li>
+      <div class="col-12">
+        <div class="card">
 
-                <li><a class="dropdown-item" href="#">Today</a></li>
-                <li><a class="dropdown-item" href="#">This Month</a></li>
-                <li><a class="dropdown-item" href="#">This Year</a></li>
-              </ul>
-            </div>
+          <div class="filter">
+            <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+              <li class="dropdown-header text-start">
+                <h6>Filter</h6>
+              </li>
 
-            <div class="card-body">
-              <h5 class="card-title">Program vs Employability</h5>
+              <li><a class="dropdown-item" href="#">Today</a></li>
+              <li><a class="dropdown-item" href="#">This Month</a></li>
+              <li><a class="dropdown-item" href="#">This Year</a></li>
+            </ul>
+          </div>
 
-              <!-- Bar Chart -->
-              <canvas id="barChart" style="max-height: 400px;"></canvas>
-              <script>
-                document.addEventListener("DOMContentLoaded", () => {
-                  new Chart(document.querySelector('#barChart'), {
-                    type: 'bar',
-                    data: {
-                      labels: ['Architecture', 'Planning', 'Design', 'Engineering', 'Management', 'MCA', 'Pharmacy', 'Hotem Management'],
-                      datasets: [
+          <div class="card-body">
+            <h5 class="card-title">Program vs Employability</h5>
+
+            <!-- Bar Chart -->
+            <canvas id="barChart" style="max-height: 400px;"></canvas>
+            <script>
+              document.addEventListener("DOMContentLoaded", () => {
+                new Chart(document.querySelector('#barChart'), {
+                  type: 'bar',
+                  data: {
+                    labels: ['Architecture', 'Planning', 'Design', 'Engineering', 'Management', 'MCA', 'Pharmacy', 'Hotem Management'],
+                    datasets: [
                       {
-                          label: "Employed",
-                          backgroundColor:  'rgb(54, 162, 235)',
-                          borderColor: "green",
-                          borderWidth: 1,
-                          data: [10,7,4,6,9,7,3,10]
-                        },
-                        {
-                          label: "Unemployed",
-                          backgroundColor: 'rgb(255, 205, 86)',
-                          borderColor: "red",
-                          borderWidth: 1,
-                          data: [3, 5, 6, 7,3, 5, 6, 7]
-                        }
+                        label: "Employed",
+                        backgroundColor: 'rgb(54, 162, 235)',
+                        borderColor: "green",
+                        borderWidth: 1,
+                        data: [10, 7, 4, 6, 9, 7, 3, 10]
+                      },
+                      {
+                        label: "Unemployed",
+                        backgroundColor: 'rgb(255, 205, 86)',
+                        borderColor: "red",
+                        borderWidth: 1,
+                        data: [3, 5, 6, 7, 3, 5, 6, 7]
+                      }
 
-                        // 'rgb(255, 99, 132)',
-    
-                        //     'rgb(255, 205, 86)',
-    
-                        //     'rgb(75, 192, 192)',
-                        //     'rgb(201, 203, 207)',
-                        //     'rgb(54, 162, 235)',
-                        //     'rgb(299, 255, 190)'
-            
-                      
-                    
-                      ]
-                    },
+                      // 'rgb(255, 99, 132)',
+
+                      //     'rgb(255, 205, 86)',
+
+                      //     'rgb(75, 192, 192)',
+                      //     'rgb(201, 203, 207)',
+                      //     'rgb(54, 162, 235)',
+                      //     'rgb(299, 255, 190)'
+
+
+
+                    ]
+                  },
+                  options: {
+                    scales: {
+                      y: {
+                        beginAtZero: true
+                      }
+                    }
+                  }
+                });
+              });
+            </script>
+            <!-- End Bar CHart -->
+
+          </div>
+
+        </div>
+      </div><!-- End Reports -->
+
+      <!-- End Left side columns -->
+
+
+
+      <!-- Indian Map vs UnEmployability -->
+      <div class="col-12">
+        <div class="card">
+          <h5 class="card-title">States vs Unemployability {under construction}</h5>
+          <div id="myChart" class="chart--container">
+            <a class="zc-ref" href="https://www.zingchart.com/">Powered by ZingChart</a>
+            <script>
+              let chartConfig = {
+                shapes: [
+                  {
+                    type: 'zingchart.maps',
                     options: {
-                      scales: {
-                        y: {
-                          beginAtZero: true
+                      bbox: [67.177, 36.494, 98.403, 6.965], // get bbox from zingchart.maps.getItemInfo('world-countries','ind');
+                      ignore: ['IND'], // ignore India because we are rendering a more specific India map below
+                      name: 'world.countries',
+                      panning: false, // turn of zooming. Doesn't work with bounding box
+                      style: {
+                        tooltip: {
+                          borderColor: '#000',
+                          borderWidth: '2px',
+                          fontSize: '18px'
+                        },
+                        controls: {
+                          visible: false // turn of zooming. Doesn't work with bounding box
+                        },
+                        hoverState: {
+                          alpha: .28
+                        }
+                      },
+                      zooming: false // turn of zooming. Doesn't work with bounding box
+                    }
+                  },
+                  {
+                    type: 'zingchart.maps',
+                    options: {
+                      name: 'ind',
+                      panning: false, // turn of zooming. Doesn't work with bounding box
+                      zooming: false,
+                      scrolling: false,
+                      style: {
+                        tooltip: {
+                          borderColor: '#000',
+                          borderWidth: '2px',
+                          fontSize: '18px'
+                        },
+                        borderColor: '#000',
+                        borderWidth: '2px',
+                        controls: {
+                          visible: false, // turn of zooming. Doesn't work with bounding box
+
+                        },
+                        hoverState: {
+                          alpha: .28
+                        },
+                        items: {
+                          KA: {
+                            tooltip: {
+                              text: 'Karnataka has 2,851 monthly users total',
+                              backgroundColor: '#ff5722'
+                            },
+                            backgroundColor: '#ff5722',
+                            label: {
+                              visible: true
+                            }
+                          },
+                          MH: {
+                            tooltip: {
+                              text: 'Maharashtra has 2,683 monthly users total',
+                              backgroundColor: '#ff9800'
+                            },
+                            backgroundColor: '#ff9800',
+                            label: {
+                              visible: true
+                            }
+                          },
+                          TL: {
+                            tooltip: {
+                              text: 'Telangana has 1,494 monthly users total',
+                              backgroundColor: '#00AE4D'
+                            },
+                            backgroundColor: '#00AE4D',
+                            label: {
+                              visible: true
+                            }
+                          },
+                          TN: {
+                            tooltip: {
+                              text: 'Tamil Nadu has 1,968 monthly users total',
+                              backgroundColor: '#00bcd4'
+                            },
+                            backgroundColor: '#00bcd4',
+                            label: {
+                              visible: true
+                            }
+                          }
+                        },
+                        label: { // text displaying. Like valueBox
+                          fontSize: '15px',
+                          visible: false
                         }
                       }
                     }
-                  });
-                });
-              </script>
-              <!-- End Bar CHart -->
+                  }
+                ]
+              };
 
-            </div>
-
-          </div>
-        </div><!-- End Reports -->
-
-        <!-- End Left side columns -->
-
-
-
-        <!-- Indian Map vs UnEmployability -->
-        <div class="col-12">
-          <div class="card">
-            <h5 class="card-title">States vs Unemployability {under construction}</h5>
-            <div id="myChart" class="chart--container">
-              <a class="zc-ref" href="https://www.zingchart.com/">Powered by ZingChart</a>
-              <script>
-                let chartConfig = {
-  shapes: [
-    {
-      type: 'zingchart.maps',
-      options: {
-        bbox: [67.177, 36.494, 98.403, 6.965], // get bbox from zingchart.maps.getItemInfo('world-countries','ind');
-        ignore: ['IND'], // ignore India because we are rendering a more specific India map below
-        name: 'world.countries',
-        panning: false, // turn of zooming. Doesn't work with bounding box
-        style: {
-          tooltip: {
-            borderColor: '#000',
-            borderWidth: '2px',
-            fontSize: '18px'
-          },
-          controls: {
-            visible: false // turn of zooming. Doesn't work with bounding box
-          },
-          hoverState: {
-            alpha: .28
-          }
-        },
-        zooming: false // turn of zooming. Doesn't work with bounding box
-      }
-    },
-    {
-      type: 'zingchart.maps',
-      options: {
-        name: 'ind',
-        panning: false, // turn of zooming. Doesn't work with bounding box
-        zooming: false,
-        scrolling: false,
-        style: {
-          tooltip: {
-            borderColor: '#000',
-            borderWidth: '2px',
-            fontSize: '18px'
-          },
-          borderColor: '#000',
-          borderWidth: '2px',
-          controls: {
-            visible: false, // turn of zooming. Doesn't work with bounding box
-
-          },
-          hoverState: {
-            alpha: .28
-          },
-          items: {
-            KA: {
-              tooltip: {
-                text: 'Karnataka has 2,851 monthly users total',
-                backgroundColor: '#ff5722'
-              },
-              backgroundColor: '#ff5722',
-              label: {
-                visible: true
-              }
-            },
-            MH: {
-              tooltip: {
-                text: 'Maharashtra has 2,683 monthly users total',
-                backgroundColor: '#ff9800'
-              },
-              backgroundColor: '#ff9800',
-              label: {
-                visible: true
-              }
-            },
-            TL: {
-              tooltip: {
-                text: 'Telangana has 1,494 monthly users total',
-                backgroundColor: '#00AE4D'
-              },
-              backgroundColor: '#00AE4D',
-              label: {
-                visible: true
-              }
-            },
-            TN: {
-              tooltip: {
-                text: 'Tamil Nadu has 1,968 monthly users total',
-                backgroundColor: '#00bcd4'
-              },
-              backgroundColor: '#00bcd4',
-              label: {
-                visible: true
-              }
-            }
-          },
-          label: { // text displaying. Like valueBox
-            fontSize: '15px',
-            visible: false
-          }
-        }
-      }
-    }
-  ]
-};
-
-zingchart.loadModules('maps,maps-ind,maps-world-countries');
-zingchart.render({
-  id: 'myChart',
-  data: chartConfig,
-  height: '100%',
-  width: '100%',
-});
-              </script>
-            </div>
-          </div>
-        </div> 
-        <!-- map ends -->
-        
-      <div class="card" id="reasons-graph">
-        <div class="card-body">
-          <h5 class="card-title">Reasons of Unemployability</h5>
-
-          <!-- Bar Chart -->
-          <canvas id="barChart1" style="max-height: 400px"></canvas>
-          <script>
-            document.addEventListener("DOMContentLoaded", () => {
-              new Chart(document.querySelector("#barChart1"), {
-                type: "bar",
-                data: {
-                  labels: [
-                    "Infrastructure",
-                    "Hand on learning experience",
-                    "Demand skills",
-                    "Job opportunities",
-                    "Training & placement resources",
-                    "Different career interest",
-                  ],
-                  datasets: [
-                    {
-                      label: "Bar Chart",
-                      data: [6500, 5900, 8000, 8100, 5600, 5500],
-                      backgroundColor: [
-                        "rgba(255, 99, 132, 0.2)",
-                        "rgba(255, 159, 64, 0.2)",
-                        "rgba(255, 205, 86, 0.2)",
-                        "rgba(75, 192, 192, 0.2)",
-                        "rgba(54, 162, 235, 0.2)",
-                        "rgba(153, 102, 255, 0.2)",
-                      ],
-                      borderColor: [
-                        "rgb(255, 99, 132)",
-                        "rgb(255, 159, 64)",
-                        "rgb(255, 205, 86)",
-                        "rgb(75, 192, 192)",
-                        "rgb(54, 162, 235)",
-                        "rgb(153, 102, 255)",
-                      ],
-                      borderWidth: 1,
-                    },
-                  ],
-                },
-      //           yAxis : {
-      //          categories: ['0M', '2M', '4M', '6M', '8M', '10M','12M','14M']
-      //  },
-                options: {
-                  scales: {
-                    y: {
-                      beginAtZero: true,
-                    },
-                  },
-                },
+              zingchart.loadModules('maps,maps-ind,maps-world-countries');
+              zingchart.render({
+                id: 'myChart',
+                data: chartConfig,
+                height: '100%',
+                width: '100%',
               });
-            });
-          </script>
-          <!-- End Bar CHart -->
+            </script>
+          </div>
         </div>
       </div>
-        <!-- Unemployability percentage -->
-      
-
-        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
-
-        <!-- Vendor JS Files -->
-        <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/vendor/chart.js/chart.min.js"></script>
-        <script src="assets/vendor/echarts/echarts.min.js"></script>
-        <script src="assets/vendor/quill/quill.min.js"></script>
-        <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
-        <script src="assets/vendor/tinymce/tinymce.min.js"></script>
-        <script src="assets/vendor/php-email-form/validate.js"></script>
-
-        <!-- Template Main JS File -->
-        <script src="assets/js/main.js"></script>
+      <!-- map ends -->
 
 
-        <!-- pie chart script -->
-<!-- <script>
+      <!-- Unemployability percentage -->
+
+
+      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+          class="bi bi-arrow-up-short"></i></a>
+
+      <!-- Vendor JS Files -->
+      <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/chart.js/chart.min.js"></script>
+      <script src="assets/vendor/echarts/echarts.min.js"></script>
+      <script src="assets/vendor/quill/quill.min.js"></script>
+      <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+      <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+      <script src="assets/vendor/php-email-form/validate.js"></script>
+
+      <!-- Template Main JS File -->
+      <script src="assets/js/main.js"></script>
+
+
+      <!-- pie chart script -->
+      <!-- <script>
   var ctx = document.getElementById("pieChart").getContext('2d');
 </script> -->
 
-<!-- <script type="text/javascript">
+      <!-- <script type="text/javascript">
   window.onload=function(){/*  ww  w  .j a va2s . com*/
 var data = [{
  data: [50, 55, 60, 33],
@@ -1374,80 +1304,80 @@ var myChart = new Chart(ctx, {
 
 
 
-        <!-- 3D GRAPH SCRIPT -->
-        <script>
-         // Set up the chart
-const chart = new Highcharts.Chart({
-  chart: {
-    renderTo: 'container',
-    type: 'column',
-    options3d: {
-      enabled: true,
-      alpha: 4,
-      beta: 36,
-      depth: 100,
-      viewDistance: 25
-    }
-  },
-  title: {
-    text: 'Year vs Employability by diversity'
-  },
-  subtitle: {
-    // text: 'Test options by dragging the sliders below'
-  },
-  xAxis: {
+      <!-- 3D GRAPH SCRIPT -->
+      <script>
+        // Set up the chart
+        const chart = new Highcharts.Chart({
+          chart: {
+            renderTo: 'container',
+            type: 'column',
+            options3d: {
+              enabled: true,
+              alpha: 4,
+              beta: 36,
+              depth: 100,
+              viewDistance: 25
+            }
+          },
+          title: {
+            text: 'Year vs Employability by diversity'
+          },
+          subtitle: {
+            // text: 'Test options by dragging the sliders below'
+          },
+          xAxis: {
 
-               categories: ['2014-15', '2015-16', '2016-17', '2017-18', '2018-19', '2020-21']
+            categories: ['2014-15', '2015-16', '2016-17', '2017-18', '2018-19', '2020-21']
+          },
+          yAxis: {
+            categories: ['0M', '2M', '4M', '6M', '8M', '10M', '12M', '14M']
+          },
+          plotOptions: {
+            column: {
+              depth: 25,
+              grouping: false
+            }
+          },
+          series: [
+            {
+              name: "Minority",
+              data: [0, 1, 1, 0, 1, 1],
+              stack: "c",
             },
-       yAxis : {
-               categories: ['0M', '2M', '4M', '6M', '8M', '10M','12M','14M']
-       },
-  plotOptions: {
-    column: {
-      depth: 25,
-      grouping: false
-    }
-  },
-  series:[            
-              {
-                name: "Minority",
-                data: [0, 1, 1, 0, 1, 1],
-                stack: "c",
-              },
-              {
-                name: "Female",
-                data: [0, 2, 1, 2, 1, 1],
-                stack: "b",
-              },
-              {
-                name: "Male",
-                data: [1, 3, 2, 5, 2, 1],
-                stack: "a",
-              },
-              {
-                name: "Placed",
-                data: [1, 5, 3, 7, 3, 2],
-                stack: "c",
-              },
+            {
+              name: "Female",
+              data: [0, 2, 1, 2, 1, 1],
+              stack: "b",
+            },
+            {
+              name: "Male",
+              data: [1, 3, 2, 5, 2, 1],
+              stack: "a",
+            },
+            {
+              name: "Placed",
+              data: [1, 5, 3, 7, 3, 2],
+              stack: "c",
+            },
 
-            ]
-});
+          ]
+        });
 
-function showValues() {
-  document.getElementById('alpha-value').innerHTML = chart.options.chart.options3d.alpha;
-  document.getElementById('beta-value').innerHTML = chart.options.chart.options3d.beta;
-  document.getElementById('depth-value').innerHTML = chart.options.chart.options3d.depth;
-}
+        function showValues() {
+          document.getElementById('alpha-value').innerHTML = chart.options.chart.options3d.alpha;
+          document.getElementById('beta-value').innerHTML = chart.options.chart.options3d.beta;
+          document.getElementById('depth-value').innerHTML = chart.options.chart.options3d.depth;
+        }
 
-// Activate the sliders
-document.querySelectorAll('#sliders input').forEach(input => input.addEventListener('input', e => {
-  chart.options.chart.options3d[e.target.id] = parseFloat(e.target.value);
-  showValues();
-  chart.redraw(false);
-}));
+        // Activate the sliders
+        document.querySelectorAll('#sliders input').forEach(input => input.addEventListener('input', e => {
+          chart.options.chart.options3d[e.target.id] = parseFloat(e.target.value);
+          showValues();
+          chart.redraw(false);
+        }));
 
-showValues();
-        </script>
+        showValues();
+      </script>
 </body>
 
 </html>
