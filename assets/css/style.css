@@ -13,7 +13,8 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: poppins;
   background: #f6f9ff;
   color: #444444;
 }
@@ -1342,6 +1343,15 @@ h6 {
 .trigger-btn {
   display: inline-block;
   margin: 100px auto;
+}
+
+.nav-link{
+  color:#222;
+  /* font-weight: 600; */
+}
+
+.nav-link:active{
+  font-weight: 600;
 }
 
 footer {

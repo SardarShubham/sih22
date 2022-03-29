@@ -54,16 +54,21 @@
         <!-- End Search Icon-->
 
         <!-- START upload csv and reasons of Unemployment buttons -->
-        <ul class="nav-btns">
-          <a href="#upload-csv">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#largeModal">
+        <li class="nav-item">
+          <a class="nav-link active"  href="#">
+            <span type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#largeModal">
               Upload Placemment Record
-            </button>
+            </span>         
           </a>
-          <a href="#reasons-graph">
-            <button class="btn btn-primary">Add Reasons of Unemployability</button>
-          </a>
-        </ul>
+        </li>
+
+        <li class="nav-item">
+          <span type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#reasonModal">
+            Add Reasons of Unemployability         
+          </span>
+        </li>
+
+        
 
         <!-- END upload csv and reasons of Unemployment buttons -->
 
@@ -426,7 +431,7 @@
               </div> -->
 
 
-              <div class="file-upload" id="upload-csv">
+              <div class="file-upload">
                 <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">
                   Add file
                 </button>
@@ -449,6 +454,90 @@
                   </div>
                 </div>
               </div>
+            </div>
+
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                Close
+              </button>
+              <button type="button" class="btn btn-success">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="modal fade" id="reasonModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" style="font-size: 34px">
+                Form - Reasons for Unemployability 
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- <div class="drag__container"> -->
+                <!-- <i class="bi bi-download"></i>
+                <label>Drag or Drop a file</label>
+              </div> -->
+
+              <h5 class="form-label">Select one or more Reasons</h5>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                <label class="form-check-label" for="flexCheckDefault">
+                  Lack of Infrastructure
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Lack of hands on learning experience
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Lack of in-demand skills
+                </label>
+              </div>              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Lack of job opportunities
+                </label>
+              </div>              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Lack of training & placement resources
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Different career interest apart from technical education
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Different career interest apart from technical education
+                </label>
+              </div>
+
+              <br/>
+              <div class="mb-3">
+                <h5 class="form-label">If Other than above reasons, please specify</h5>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your reason here"></textarea>
+              </div>
+
+
+
             </div>
 
 

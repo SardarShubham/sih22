@@ -11,6 +11,11 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
 
       <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet" />
@@ -42,7 +47,7 @@
     End Search Bar -->
 
     <nav class="header-nav ms-auto">
-      <ul class="navbar d-flex align-items-center">
+      <ul class="nav d-flex align-items-center">
         <li class="nav-item d-block d-lg-none">
           <a class="nav-link nav-icon search-bar-toggle" href="#">
             <i class="bi bi-search"></i>
@@ -51,13 +56,13 @@
         <!-- End Search Icon-->
 
         <li class="nav-item">
-          <a class="nav-link active" style="color: black;" href="#">
+          <a class="nav-link"  href="">
             Reasons of Unemployment
           </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" style="color: black;" href="https://campusplacement.netlify.app/aicte.html">
+          <a class="nav-link" href="aicte.html">
             Dashboard
           </a>
         </li>
@@ -201,6 +206,93 @@
     <!-- End Icons Navigation -->
   </header>
   <!-- End Header -->
+
+  <main id="main" class="main" id="main" style="margin-left: 0">
+    <div class="pagetitle">
+      <h1>
+        Reasons of Unemployability
+      </h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">reasons</li>
+        </ol>
+      </nav>
+    </div>
+    <div class="card col-12" id="reasons-graph">
+      <div class="card-body">
+        <!-- <h5 class="card-title">Due to Lack of </h5> -->
+
+        <!-- Bar Chart -->
+        <canvas id="barChart1" style="max-height: 400px"></canvas>
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            new Chart(document.querySelector("#barChart1"), {
+              type: "bar",
+              data: {
+                labels: [
+                  "Infrastructure",
+                  "Hand on learning experience",
+                  "Demand skills",
+                  "Job opportunities",
+                  "Training & placement resources",
+                  "Different career interest",
+                  "Other"
+                ],
+                datasets: [
+                  {
+                    label: "Bar Chart",
+                    data: [6500, 5900, 8000, 8100, 5600, 5500, 2500],
+                    backgroundColor: [
+                      "rgba(255, 99, 132, 0.2)",
+                      "rgba(255, 159, 64, 0.2)",
+                      "rgba(255, 205, 86, 0.2)",
+                      "rgba(75, 192, 192, 0.2)",
+                      "rgba(54, 162, 235, 0.2)",
+                      "rgba(153, 102, 255, 0.2)",
+                      "rgb(153, 23, 255, 0.2)",
+
+                    ],
+                    borderColor: [
+                      "rgb(255, 99, 132)",
+                      "rgb(255, 159, 64)",
+                      "rgb(255, 205, 86)",
+                      "rgb(75, 192, 192)",
+                      "rgb(54, 162, 235)",
+                      "rgb(153, 102, 255)",
+                      "rgba(153, 102, 255, 0.2)"
+                    ],
+                    borderWidth: 1,
+                  },
+                ],
+              },
+
+              options: {
+                scales: {
+                  y: {
+                    beginAtZero: true,
+                  },
+                },
+              },
+            });
+          });
+        </script>
+        <!-- End Bar CHart -->
+      </div>
+
+      <div>
+        <ul>
+          <li>Lack of Infrastructure</li>
+          <li>Lack of hands on learning experience</li>
+          <li>Lack of in-demand skills</li>
+          <li>Lack of job opportunities</li>
+          <li>Lack of training & placement resources</li>
+          <li> Different career interest apart from technical education</li>
+          <li>Different career interest apart from technical education</li>
+        </ul>
+      </div>
+    </div>
+    </main>
     
 </body>
 </html>
