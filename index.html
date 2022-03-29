@@ -1,72 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Campus Placement Template</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-  <title>Campus Placement Template</title>
-  <meta content="" name="description" />
-  <meta content="" name="keywords" />
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon" />
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.gstatic.com" rel="preconnect" />
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet" />
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
-  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
-  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet" />
-
-  <!-- =======================================================
-  * Template Name: NiceAdmin - v2.2.2
-  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-
-  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script> 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.4.0/dist/chartjs-plugin-datalabels.min.js"></script> -->
-  <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/highcharts-3d.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
-<script src="https://code.highcharts.com/modules/export-data.js"></script>
-<script src="https://code.highcharts.com/modules/accessibility.js"></script>
-<script
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"
     ></script>
-</head>
+  </head>
 
-<body>
-  <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top d-flex align-items-center">
-    <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="" />
-        <span class="d-none d-lg-block">Campus Placement</span>
-      </a>
-      <i class="bi bi-list toggle-sidebar-btn"></i>
-    </div>
-    <!-- End Logo -->
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.png" alt="" />
+          <span class="d-none d-lg-block">Campus Placement</span>
+        </a>
+        <!-- <i class="bi bi-list toggle-sidebar-btn"></i> -->
+      </div>
+      <!-- End Logo -->
 
-    <!-- <div class="search-bar">
+      <!-- <div class="search-bar">
       <form class="search-form d-flex align-items-center" method="POST" action="#">
         <input type="text" name="query" placeholder="Search" title="Enter search keyword" />
         <button type="submit" title="Search">
@@ -76,1367 +86,325 @@
     </div>
     End Search Bar -->
 
-    <nav class="header-nav ms-auto">
-      <ul class="d-flex align-items-center">
-        <li class="nav-item d-block d-lg-none">
-          <a class="nav-link nav-icon search-bar-toggle" href="#">
-            <i class="bi bi-search"></i>
-          </a>
-        </li>
-        <!-- End Search Icon-->
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li>
+          <!-- End Search onIcon-->
 
-        <ul>
-          <a href="#reasons-graph">
-            <button class="btn btn-primary">Reasons of UnEmployment</button>
-          </a>
-        </ul>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-            <i class="bi bi-bell"></i>
-            <span class="badge bg-primary badge-number">4</span> </a><!-- End Notification Icon -->
-
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
-            <li class="dropdown-header">
-              You have 4 new notifications
-              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
-            </li>
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
-
-            <li class="notification-item">
-              <i class="bi bi-exclamation-circle text-warning"></i>
-              <div>
-                <h4>Lorem Ipsum</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>30 min. ago</p>
-              </div>
-            </li>
-
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
-
-            <li class="notification-item">
-              <i class="bi bi-x-circle text-danger"></i>
-              <div>
-                <h4>Atque rerum nesciunt</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>1 hr. ago</p>
-              </div>
-            </li>
-
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
-
-            <li class="notification-item">
-              <i class="bi bi-check-circle text-success"></i>
-              <div>
-                <h4>Sit rerum fuga</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>2 hrs. ago</p>
-              </div>
-            </li>
-
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
-
-            <li class="notification-item">
-              <i class="bi bi-info-circle text-primary"></i>
-              <div>
-                <h4>Dicta reprehenderit</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>4 hrs. ago</p>
-              </div>
-            </li>
-
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
-            <li class="dropdown-footer">
-              <a href="#">Show all notifications</a>
-            </li>
+          <ul style="margin-right: 30px;">
+            <button
+              href="#myModal"
+              class="trigger-btn btn btn-primary"
+              data-toggle="modal"
+            >
+              College login
+            </button>
+            <button
+              href="#aicteModal"
+              class="trigger-btn btn btn-primary"
+              data-toggle="modal"
+            >
+              AICTE login
+            </button>
           </ul>
-          <!-- End Notification Dropdown Items -->
-        </li>
-        <!-- End Notification Nav -->
+<!-- 
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+              <i class="bi bi-bell"></i>
+              <span class="badge bg-primary badge-number">4</span> </a -->
+            <!-- End Notification Icon -->
 
-       
-        <li class="nav-item dropdown pe-3">
-          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="assets/img/aicteLogo.png" alt="Profile" class="rounded-circle" />
-            <span class="d-none d-md-block dropdown-toggle ps-2">AICTE</span> </a><!-- End Profile Iamge Icon -->
+            <!-- <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications"
+            >
+              <li class="dropdown-header">
+                You have 4 new notifications
+                <a href="#"
+                  ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                    >View all</span
+                  ></a
+                >
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
 
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
-            <li class="dropdown-header">
-              <h6>Kevin Anderson</h6>
-              <span>Web Designer</span>
-            </li>
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
+              <li class="notification-item">
+                <i class="bi bi-exclamation-circle text-warning"></i>
+                <div>
+                  <h4>Lorem Ipsum</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>30 min. ago</p>
+                </div>
+              </li>
 
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-                <i class="bi bi-person"></i>
-                <span>My Profile</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
 
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-                <i class="bi bi-gear"></i>
-                <span>Account Settings</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
+              <li class="notification-item">
+                <i class="bi bi-x-circle text-danger"></i>
+                <div>
+                  <h4>Atque rerum nesciunt</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>1 hr. ago</p>
+                </div>
+              </li>
 
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
-                <i class="bi bi-question-circle"></i>
-                <span>Need Help?</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
 
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="#">
-                <i class="bi bi-box-arrow-right"></i>
-                <span>Sign Out</span>
-              </a>
-            </li>
-          </ul>
-          <!-- End Profile Dropdown Items -->
-        </li>
-        <!-- End Profile Nav -->
-      </ul>
-    </nav>
-    <!-- End Icons Navigation -->
-  </header>
-  <!-- End Header -->
+              <li class="notification-item">
+                <i class="bi bi-check-circle text-success"></i>
+                <div>
+                  <h4>Sit rerum fuga</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>2 hrs. ago</p>
+                </div>
+              </li>
 
-  
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
 
-  <!-- ======= Sidebar ======= -->
-  <aside id="sidebar" class="sidebar">
-    <ul class="sidebar-nav" id="sidebar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">
-          <i class="bi bi-grid"></i>
-          <span>AICTE Dashboard</span>
-        </a>
-      </li>
-      <!-- End Dashboard Nav -->
-      <a href="./graphs.html">Graphs</a>
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-menu-button-wide"></i><span>Components</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="components-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="components-alerts.html">
-              <i class="bi bi-circle"></i><span>Alerts</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-accordion.html">
-              <i class="bi bi-circle"></i><span>Accordion</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-badges.html">
-              <i class="bi bi-circle"></i><span>Badges</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-breadcrumbs.html">
-              <i class="bi bi-circle"></i><span>Breadcrumbs</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-buttons.html">
-              <i class="bi bi-circle"></i><span>Buttons</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-cards.html">
-              <i class="bi bi-circle"></i><span>Cards</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-carousel.html">
-              <i class="bi bi-circle"></i><span>Carousel</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-list-group.html">
-              <i class="bi bi-circle"></i><span>List group</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-modal.html">
-              <i class="bi bi-circle"></i><span>Modal</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-tabs.html">
-              <i class="bi bi-circle"></i><span>Tabs</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-pagination.html">
-              <i class="bi bi-circle"></i><span>Pagination</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-progress.html">
-              <i class="bi bi-circle"></i><span>Progress</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-spinners.html">
-              <i class="bi bi-circle"></i><span>Spinners</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-tooltips.html">
-              <i class="bi bi-circle"></i><span>Tooltips</span>
-            </a>
-          </li>
+              <li class="notification-item">
+                <i class="bi bi-info-circle text-primary"></i>
+                <div>
+                  <h4>Dicta reprehenderit</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li class="dropdown-footer">
+                <a href="#">Show all notifications</a>
+              </li>
+            </ul> -->
+            <!-- End Notification Dropdown Items -->
+          <!-- </li> -->
+          <!-- End Notification Nav -->
+
+          <!-- <li class="nav-item dropdown pe-3">
+            <a
+              class="nav-link nav-profile d-flex align-items-center pe-0"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              <img
+                src="assets/img/aicteLogo.png"
+                alt="Profile"
+                class="rounded-circle"
+              />
+              <span class="d-none d-md-block dropdown-toggle ps-2"
+                >AICTE</span
+              > </a
+            >End Profile Iamge Icon -->
+<!-- 
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
+            >
+              <li class="dropdown-header">
+                <h6>Kevin Anderson</h6>
+                <span>Web Designer</span>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="users-profile.html"
+                >
+                  <i class="bi bi-person"></i>
+                  <span>My Profile</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="users-profile.html"
+                >
+                  <i class="bi bi-gear"></i>
+                  <span>Account Settings</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="pages-faq.html"
+                >
+                  <i class="bi bi-question-circle"></i>
+                  <span>Need Help?</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="bi bi-box-arrow-right"></i>
+                  <span>Sign Out</span>
+                </a>
+              </li>
+            </ul> -->
+            <!-- End Profile Dropdown Items -->
+          <!-- </li> -->
+          <!-- End Profile Nav -->
         </ul>
-      </li>
-      <!-- End Components Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-journal-text"></i><span>Forms</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="forms-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="forms-elements.html">
-              <i class="bi bi-circle"></i><span>Form Elements</span>
-            </a>
-          </li>
-          <li>
-            <a href="forms-layouts.html">
-              <i class="bi bi-circle"></i><span>Form Layouts</span>
-            </a>
-          </li>
-          <li>
-            <a href="forms-editors.html">
-              <i class="bi bi-circle"></i><span>Form Editors</span>
-            </a>
-          </li>
-          <li>
-            <a href="forms-validation.html">
-              <i class="bi bi-circle"></i><span>Form Validation</span>
-            </a>
-          </li>
-        </ul>
-      </li>
-      <!-- End Forms Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-layout-text-window-reverse"></i><span>Tables</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="tables-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="tables-general.html">
-              <i class="bi bi-circle"></i><span>General Tables</span>
-            </a>
-          </li>
-          <li>
-            <a href="tables-data.html">
-              <i class="bi bi-circle"></i><span>Data Tables</span>
-            </a>
-          </li>
-        </ul>
-      </li>
-      <!-- End Tables Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-bar-chart"></i><span>Charts</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="charts-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="charts-chartjs.html">
-              <i class="bi bi-circle"></i><span>Chart.js</span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-apexcharts.html">
-              <i class="bi bi-circle"></i><span>ApexCharts</span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-echarts.html">
-              <i class="bi bi-circle"></i><span>ECharts</span>
-            </a>
-          </li>
-        </ul>
-      </li>
-      <!-- End Charts Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-gem"></i><span>Icons</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="icons-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="icons-bootstrap.html">
-              <i class="bi bi-circle"></i><span>Bootstrap Icons</span>
-            </a>
-          </li>
-          <li>
-            <a href="icons-remix.html">
-              <i class="bi bi-circle"></i><span>Remix Icons</span>
-            </a>
-          </li>
-          <li>
-            <a href="icons-boxicons.html">
-              <i class="bi bi-circle"></i><span>Boxicons</span>
-            </a>
-          </li>
-        </ul>
-      </li>
-      <!-- End Icons Nav -->
-
-      <li class="nav-heading">Pages</li>
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
-          <i class="bi bi-person"></i>
-          <span>Profile</span>
-        </a>
-      </li>
-      <!-- End Profile Page Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-faq.html">
-          <i class="bi bi-question-circle"></i>
-          <span>F.A.Q</span>
-        </a>
-      </li>
-      <!-- End F.A.Q Page Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-contact.html">
-          <i class="bi bi-envelope"></i>
-          <span>Contact</span>
-        </a>
-      </li>
-      <!-- End Contact Page Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-register.html">
-          <i class="bi bi-card-list"></i>
-          <span>Register</span>
-        </a>
-      </li>
-      <!-- End Register Page Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-login.html">
-          <i class="bi bi-box-arrow-in-right"></i>
-          <span>Login</span>
-        </a>
-      </li>
-      <!-- End Login Page Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-error-404.html">
-          <i class="bi bi-dash-circle"></i>
-          <span>Error 404</span>
-        </a>
-      </li>
-      <!-- End Error 404 Page Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-blank.html">
-          <i class="bi bi-file-earmark"></i>
-          <span>Blank</span>
-        </a>
-      </li>
-      <!-- End Blank Page Nav -->
-    </ul>
-  </aside>
-  <!-- End Sidebar-->
-
-  <main id="main" class="main">
-    <div class="pagetitle">
-      <h1>Dashboard</h1>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active">Dashboard</li>
-        </ol>
       </nav>
-    </div>
-    <!-- End Page Title -->
+      <!-- End Icons Navigation -->
+    </header>
+    <main>
+      <!-- login forms -->
 
-    <section class="section dashboard">
-      <div class="col-lg-12">
-        <div class="row">
-          <div class="row" style=" justify-content: center;">
-
-            <!-- stats row --
-    
-                <!-- Stat
-                 total institutuions, placed, unplaced, male , female, minority -->
-
-            <!-- first card custon -->
-            <div class="col-xxl-3 col-md-4">
-              <div class="card info-card sales-card">
-
-                <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <li class="dropdown-header text-start">
-                      <h6>Filter</h6>
-                    </li>
-
-                    <li><a class="dropdown-item" href="#">Today</a></li>
-                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                    <li><a class="dropdown-item" href="#">This Year</a></li>
-                  </ul>
-                </div>
-
-                <div class="card-body">
-                  <h5 class="card-title">Total Institutions
-                    <span>| 2020</span>
-                  </h5>
-
-                  <div class="d-flex align-items-center">
-                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <!-- <i class="bi bi-cart"></i> -->
-                      <i class="bi bi-people"></i>
-
-                    </div>
-                    <div class="ps-3">
-                      <h6>8999</h6>
-                      <!-- <span class="text-success small pt-1 fw-bold">12%</span> <span
-                        class="text-muted small pt-2 ps-1">increase</span> -->
-
-                    </div>
-                  </div>
-                </div>
-
+      <!-- Modal HTML -->
+      <div id="myModal" class="modal fade">
+        <div class="modal-dialog modal-login">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="avatar">
+                <img src="/assets/img/login-logo.png" alt="Avatar" />
               </div>
-            </div><!-- End Sales Card -->
-
-
-
-            <div class="col-xxl-3 col-md-4">
-              <div class="card info-card sales-card">
-
-                <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <li class="dropdown-header text-start">
-                      <h6>Filter</h6>
-                    </li>
-
-                    <li><a class="dropdown-item" href="#">Today</a></li>
-                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                    <li><a class="dropdown-item" href="#">This Year</a></li>
-                  </ul>
-                </div>
-
-                <div class="card-body">
-                  <h5 class="card-title">Total Students
-                    <span>| 2020</span>
-                  </h5>
-
-                  <div class="d-flex align-items-center">
-                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <!-- <i class="bi bi-cart"></i> -->
-                      <i class="bi bi-people"></i>
-
-                    </div>
-                    <div class="ps-3">
-                      <h6>21M</h6>
-                      <!-- <span class="text-success small pt-1 fw-bold">12%</span> <span
-                        class="text-muted small pt-2 ps-1">increase</span> -->
-
-                    </div>
-                  </div>
-                </div>
-
+              <h4 class="modal-title">College Login</h4>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <!-- <form> -->
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="username"
+                  placeholder="Username"
+                  required="required"
+                  id="clg-username"
+                />
               </div>
-            </div><!-- End Sales Card -->
-
-            <!-- second card -->
-            <div class="col-xxl-3 col-md-4">
-              <div class="card info-card sales-card">
-
-                <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <li class="dropdown-header text-start">
-                      <h6>Filter</h6>
-                    </li>
-
-                    <li><a class="dropdown-item" href="#">Today</a></li>
-                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                    <li><a class="dropdown-item" href="#">This Year</a></li>
-                  </ul>
-                </div>
-
-                <div class="card-body">
-                  <h5 class="card-title">Placed <span>| 2020</span></h5>
-
-                  <div class="d-flex align-items-center">
-                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <!-- <i class="bi bi-cart"></i> -->
-                      <i class="bi bi-people"></i>
-
-                    </div>
-                    <div class="ps-3">
-                      <h6>16M</h6>
-                      <!-- <span class="text-success small pt-1 fw-bold">12%</span> <span
-                        class="text-muted small pt-2 ps-1">increase</span> -->
-
-                    </div>
-                  </div>
-                </div>
-
+              <div class="form-group">
+                <input
+                  type="password"
+                  class="form-control"
+                  name="password"
+                  placeholder="Password"
+                  required="required"
+                  id="clg-password"
+                />
               </div>
-            </div><!-- End Sales Card -->
-            <!-- Sales Card -->
-            <div class="col-xxl-3 col-md-4">
-              <div class="card info-card sales-card">
-
-                <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <li class="dropdown-header text-start">
-                      <h6>Filter</h6>
-                    </li>
-
-                    <li><a class="dropdown-item" href="#">Today</a></li>
-                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                    <li><a class="dropdown-item" href="#">This Year</a></li>
-                  </ul>
-                </div>
-
-                <div class="card-body">
-                  <h5 class="card-title">Male <span>| 2020</span></h5>
-
-                  <div class="d-flex align-items-center">
-                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <!-- <i class="bi bi-cart"></i> -->
-                      <i class="bi bi-people"></i>
-
-                    </div>
-                    <div class="ps-3">
-                      <h6>17M</h6>
-                      <!-- <span class="text-success small pt-1 fw-bold">12%</span> <span
-                        class="text-muted small pt-2 ps-1">increase</span> -->
-
-                    </div>
-                  </div>
-                </div>
-
+              <div class="form-group">
+                <button
+                  class="btn btn-primary btn-lg btn-block login-btn"
+                  onclick="getClgInput()"
+                >
+                  Login
+                </button>
               </div>
-            </div><!-- End Sales Card -->
-
-            <!-- Revenue Card -->
-            <div class="col-xxl-3 col-md-4">
-              <div class="card info-card revenue-card">
-
-                <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <li class="dropdown-header text-start">
-                      <h6>Filter</h6>
-                    </li>
-
-                    <li><a class="dropdown-item" href="#">Today</a></li>
-                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                    <li><a class="dropdown-item" href="#">This Year</a></li>
-                  </ul>
-                </div>
-
-                <div class="card-body">
-                  <h5 class="card-title">Female <span>| 2020</span></h5>
-
-                  <div class="d-flex align-items-center">
-                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="bi bi-people"></i>
-
-                      <!-- <i class="bi bi-currency-dollar"></i> -->
-                    </div>
-                    <div class="ps-3">
-                      <h6>4M</h6>
-                      <!-- <span class="text-success small pt-1 fw-bold">8%</span> <span
-                        class="text-muted small pt-2 ps-1">increase</span> -->
-
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div><!-- End Revenue Card -->
-
-            <!-- Customers Card -->
-            <div class="col-xxl-3 col-xl-12">
-
-
-
-              <div class="card info-card customers-card">
-
-                <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <li class="dropdown-header text-start">
-                      <h6>Filter</h6>
-                    </li>
-
-                    <li><a class="dropdown-item" href="#">Today</a></li>
-                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                    <li><a class="dropdown-item" href="#">This Year</a></li>
-                  </ul>
-                </div>
-
-                <div class="card-body">
-                  <h5 class="card-title">Minority <span>| 2020</span></h5>
-
-                  <div class="d-flex align-items-center">
-                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="bi bi-people"></i>
-                    </div>
-                    <div class="ps-3">
-                      <h6>1M</h6>
-                      <!-- <span class="text-danger small pt-1 fw-bold">12%</span> <span
-                        class="text-muted small pt-2 ps-1">decrease</span> -->
-
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-            </div><!-- End Customers Card -->
-
-
-
+              <!-- </form> -->
+            </div>
+            <div class="modal-footer">
+              <a href="#">Forgot Password?</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-12">
 
-
-        <!-- Left side columns -->
-
-        <div class="col-lg-12">
-          <div class="row">
-
-
-
-
-            <div class="col-lg-6">
-            <div class="card" style="height: 490.6px;">
-
-
-              <div class="card-body">
-                <h5 class="card-title">Unemployability Distribution</h5>
-    
-                <!-- Pie Chart -->
-                <canvas id="pieChart" style="max-height: 400px;"></canvas>
-
-
-                <script>
-                  document.addEventListener("DOMContentLoaded", () => {
-                    new Chart(document.querySelector('#pieChart'), {
-                      type: 'pie',
-                      data: {
-                        labels: [
-                          'BE/BTech', 'MBA', 'Architecture', 'BCom', 'BSc', 'MCA', 'Polytechnic', 'BPharma'
-                          // 'Pharmacy', 'Hotel Management'
-                        ],
-                        datasets: [{
-                          label: 'My First Dataset',
-                          data: [20,10,30,10,5,10,10,5],
-                         backgroundColor: [
-                            'rgb(255, 99, 132)',
-    
-                            'rgb(255, 205, 86)',
-    
-                            'rgb(75, 192, 192)',
-                            'rgb(201, 203, 207)',
-                            'rgb(233,200,145)',
-                            'rgb(191, 255, 240)',
-                            'rgb(197, 216, 164)',
-                            'rgb(187, 153, 129)'
-                          ],
-                          hoverOffset: 4,
-                          borderColor: "#fff"
-                        }]
-                      },
-                      options: {
-                                   tooltips: {
-                                    enabled: false
-                                  },
-                                  plugins: {
-                                    datalabels: {
-                                      formatter: (value, ctx) => {
-                                        let datasets = ctx.chart.data.datasets;
-                                        if (datasets.indexOf(ctx.dataset) === datasets.length - 1) {
-                                          let sum = datasets[0].data.reduce((a, b) => a + b, 0);
-                                          let percentage = Math.round((value / sum) * 100) + '%';
-                                          return percentage;
-                                        } else {
-                                          return percentage;
-                                        }
-                                      },
-                                      color: '#fff',
-                                    }
-                                  }
-                      }
-                    });
-                  });
-                </script>
-                <!-- End Pie CHart -->
-    
-                <div class="card-body pb-0">
-                  <!-- <h5 class="card-title">Website Traffic <span>| Today</span></h5> -->
-    
-    
-                </div><!-- End Right side columns -->
+      <div id="aicteModal" class="modal fade">
+        <div class="modal-dialog modal-login">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="avatar">
+                <img src="/assets/img/login-logo.png" alt="Avatar" />
               </div>
-    
+              <h4 class="modal-title">AICTE Login</h4>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
             </div>
-            </div>
-            <!-- Filter -->
-            <div class="col-lg-6">
-              <div class="card"
-              style="height: 490.6px;"
-              
-              id="filter-card">
-                <!-- row 1 -->
-                <div class="row">
-                  <div class="col-md-6">
-                    <label for="year"
-                    style="display: block;"
-                    ><b>Year</b></label>
-                    <select class="form-select-sm" aria-label="Default select example">
-                      <option selected>All</option>
-                      <option value="1">2021-2022</option>
-                      <option value="2">2020-2021</option>
-                      <option value="3">2020-2019</option>
-                      <option value="4">2019-2018</option>
-                      <option value="5">2018-2017</option>
-                      <option value="6">2017-2016</option>
-                    </select>
-                  </div>
-                  <div class="col-md-6">
-                    <label for="year"
-                    style="display: block;"
-
-                    ><b>Select Program</b></label>
-                    <select class="form-select-sm" aria-label="Default select example">
-                      <option selected>All</option>
-                      <option value="1">Applied Arts and Crafts</option>
-                      <option value="2">Architecture and Town Planning</option>
-                      <option value="3">Architecture and Planning</option>
-                      <option value="4">Architecture</option>
-                      <option value="5">Planning</option>
-                      <option value="6">Design</option>
-                      <option value="7">Town Planning</option>
-                      <option value="8">Engineering and Technology</option>
-                      <option value="9">Management</option>
-                      <option value="10">MCA</option>
-                      <option value="11">Pharmacy</option>
-                      <option value="12">Hotel Management and Catering</option>
-                    </select>
-                  </div>
-                </div>
-
-                <!-- row 2 -->
-                <div class="row">
-                  <div class="col-md-6">
-                    <label for="year"
-                    style="display: block;"
-                    ><b>Select level</b></label>
-                    <select class="form-select-sm" aria-label="Default select example">
-                      <option selected>All</option>
-                      <option value="1">UG</option>
-                      <option value="2">PG</option>
-                      <option value="3">Diploma</option>
-                    </select>
-                  </div>
-                  <div class="col-md-6">
-                    <label for="year"
-                    style="display: block;"
-                    ><b>Institute Type</b></label>
-                    <select class="form-select-sm" aria-label="Default select example">
-                      <option selected>All</option>
-                      <option value="1">Private</option>
-                      <option value="2">Central University</option>
-                      <option value="3">Deemed to be University(Govt)</option>
-
-                      <option value="4">Deemed to be University(Pvt)</option>
-                      <option value="5">Deemed University(Government)</option>
-                      <option value="6">Deemed University(Private)</option>
-
-                      <option value="7">Government</option>
-                      <option value="8">Govt aided</option>
-                      <option value="9">Private-Aided</option>
-
-                      <option value="10">Private-Self Financing</option>
-                      <option value="11">State Private University</option>
-                      <option value="12">Unaided - Private</option>
-
-                      <option value="13">University Managed</option>
-                      <option value="14">University Managed-Govt</option>
-                      <option value="15">University Managed-Private</option>
-                    </select>
-                  </div>
-                </div>
-
-                <!-- row 3 -->
-                <div class="row">
-                  <div class="col-md-6">
-                    <label for="year"
-                    style="display: block;"
-                    ><b>Select State</b></label>
-                    <select class="form-select-sm" aria-label="Default select example">
-                      <option selected>All</option>
-                      <!--- India states -->
-
-                      <option value="AP">Andhra Pradesh</option>
-                      <option value="AR">Arunachal Pradesh</option>
-                      <option value="AS">Assam</option>
-                      <option value="BR">Bihar</option>
-                      <option value="CH">Chandigarh</option>
-                      <option value="CT">Chhattisgarh</option>
-                      <option value="DN">Dadra and Nagar Haveli</option>
-                      <option value="DD">Daman and Diu</option>
-                      <option value="DL">Delhi</option>
-                      <option value="GA">Goa</option>
-                      <option value="GJ">Gujarat</option>
-                      <option value="HR">Haryana</option>
-                      <option value="HP">Himachal Pradesh</option>
-                      <option value="JK">Jammu and Kashmir</option>
-                      <option value="JH">Jharkhand</option>
-                      <option value="KA">Karnataka</option>
-                      <option value="KL">Kerala</option>
-                      <option value="LA">Ladakh</option>
-                      <option value="LD">Lakshadweep</option>
-                      <option value="MP">Madhya Pradesh</option>
-                      <option value="MH">Maharashtra</option>
-                      <option value="MN">Manipur</option>
-                      <option value="ML">Meghalaya</option>
-                      <option value="MZ">Mizoram</option>
-                      <option value="NL">Nagaland</option>
-                      <option value="OR">Odisha</option>
-                      <option value="PY">Puducherry</option>
-                      <option value="PB">Punjab</option>
-                      <option value="RJ">Rajasthan</option>
-                      <option value="SK">Sikkim</option>
-                      <option value="TN">Tamil Nadu</option>
-                      <option value="TG">Telangana</option>
-                      <option value="TR">Tripura</option>
-                      <option value="UP">Uttar Pradesh</option>
-                      <option value="UT">Uttarakhand</option>
-                      <option value="WB">West Bengal</option>
-                    </select>
-                  </div>
-                  <div class="col-md-6">
-                    <label for="year"
-                    style="display: block;"
-                    ><b>Minority</b></label>
-                    <select class="form-select-sm" aria-label="Default select example">
-                      <option selected>All</option>
-                      <option value="1">Yes</option>
-                    </select>
-                  </div>
-                </div>
-
-                <!-- row 4 -->
-                <div class="row">
-                  <div class="col-md-6">
-                    <label for="year"
-                    style="display: block;"
-                    ><b>Women</b></label>
-                    <select class="form-select-sm" aria-label="Default select example">
-                      <option selected>All</option>
-                      <option value="1">Yes</option>
-                    </select>
-                  </div>
-                  <!-- <div class="col-md-6">
-                    <label for="year"
-                    style="display: block;"
-                    ><b>Year</b></label>
-                    <select class="form-select-sm" aria-label="Default select example">
-                      <option selected>All</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div> -->
-                </div>
-                <!-- row 7 -->
-                <div class="row">
-                  <div class="col-md-4"></div>
-                  <div class="col-md-4">
-                    <button type="button" id="filter-btn" class="btn btn-outline-primary"
-                      style="margin-top: 0;"  
-                    >
-                      Search
-                    </button>
-                  </div>
-                  <div class="col-md-4"></div>
-                </div>
+            <div class="modal-body">
+              <!-- <form> -->
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="username"
+                  placeholder="Username"
+                  required="required"
+                  id="aicte-username"
+                />
               </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  class="form-control"
+                  name="password"
+                  placeholder="Password"
+                  required="required"
+                  id="aicte-password"
+                />
+              </div>
+              <div class="form-group">
+                <button
+                  class="btn btn-primary btn-lg btn-block login-btn"
+                  onclick="getAicteInput()"
+                >
+                  Login
+                </button>
+              </div>
+              <!-- </form> -->
+            </div>
+            <div class="modal-footer">
+              <a href="#">Forgot Password?</a>
             </div>
           </div>
         </div>
+      </div>
+    </main>
+    <script>
+      function getClgInput() {
+        let username = document.getElementById("clg-username").value;
+        let password = document.getElementById("clg-password").value;
 
-
-        <div class="col-lg-12">
-            <!-- 3D Chart -->
-          
-              <div class="card" id="3d-card">
-                <figure class="highcharts-figure">
-                  <div id="container"></div>
-                 
-                  <div id="sliders">
-                    <table>
-                      <tbody><tr>
-                        <td><label for="beta">X-axis</label></td>
-                        <td><input id="beta" type="range" min="-45" max="45" value="15"> <span id="beta-value" class="value"></span></td>
-                     
-                      </tr>
-                      <tr>
-                        <td><label for="alpha">Y-axis</label></td>
-                        <td><input id="alpha" type="range" min="0" max="45" value="15"> <span id="alpha-value" class="value"></span></td>                       
-                      </tr>
-                      <tr>
-                        <td><label for="depth">Zoom</label></td>
-                        <td><input id="depth" type="range" min="20" max="100" value="50"> <span id="depth-value" class="value"></span></td>
-                      </tr>
-                    </tbody></table>
-                  </div>
-                </figure>
-                </div>
-                <!-- graph data -->
-              </div>
-    
-        </div>
-
-
-        <div class="col-12">
-          <div class="card">
-
-            <div class="filter">
-              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                <li class="dropdown-header text-start">
-                  <h6>Filter</h6>
-                </li>
-
-                <li><a class="dropdown-item" href="#">Today</a></li>
-                <li><a class="dropdown-item" href="#">This Month</a></li>
-                <li><a class="dropdown-item" href="#">This Year</a></li>
-              </ul>
-            </div>
-
-            <div class="card-body">
-              <h5 class="card-title">Program vs Employability</h5>
-
-              <!-- Bar Chart -->
-              <canvas id="barChart" style="max-height: 400px;"></canvas>
-              <script>
-                document.addEventListener("DOMContentLoaded", () => {
-                  new Chart(document.querySelector('#barChart'), {
-                    type: 'bar',
-                    data: {
-                      labels: ['Architecture', 'Planning', 'Design', 'Engineering', 'Management', 'MCA', 'Pharmacy', 'Hotem Management'],
-                      datasets: [
-                      {
-                          label: "Employed",
-                          backgroundColor:  'rgb(54, 162, 235)',
-                          borderColor: "green",
-                          borderWidth: 1,
-                          data: [10,7,4,6,9,7,3,10]
-                        },
-                        {
-                          label: "Unemployed",
-                          backgroundColor: 'rgb(255, 205, 86)',
-                          borderColor: "red",
-                          borderWidth: 1,
-                          data: [3, 5, 6, 7,3, 5, 6, 7]
-                        }
-
-                        // 'rgb(255, 99, 132)',
-    
-                        //     'rgb(255, 205, 86)',
-    
-                        //     'rgb(75, 192, 192)',
-                        //     'rgb(201, 203, 207)',
-                        //     'rgb(54, 162, 235)',
-                        //     'rgb(299, 255, 190)'
-            
-                      
-                    
-                      ]
-                    },
-                    options: {
-                      scales: {
-                        y: {
-                          beginAtZero: true
-                        }
-                      }
-                    }
-                  });
-                });
-              </script>
-              <!-- End Bar CHart -->
-
-            </div>
-
-          </div>
-        </div><!-- End Reports -->
-
-        <!-- End Left side columns -->
-
-
-
-        <!-- Indian Map vs UnEmployability -->
-        <div class="col-12">
-          <div class="card">
-            <h5 class="card-title">States vs Unemployability {under construction}</h5>
-            <div id="myChart" class="chart--container">
-              <a class="zc-ref" href="https://www.zingchart.com/">Powered by ZingChart</a>
-              <script>
-                let chartConfig = {
-  shapes: [
-    {
-      type: 'zingchart.maps',
-      options: {
-        bbox: [67.177, 36.494, 98.403, 6.965], // get bbox from zingchart.maps.getItemInfo('world-countries','ind');
-        ignore: ['IND'], // ignore India because we are rendering a more specific India map below
-        name: 'world.countries',
-        panning: false, // turn of zooming. Doesn't work with bounding box
-        style: {
-          tooltip: {
-            borderColor: '#000',
-            borderWidth: '2px',
-            fontSize: '18px'
-          },
-          controls: {
-            visible: false // turn of zooming. Doesn't work with bounding box
-          },
-          hoverState: {
-            alpha: .28
-          }
-        },
-        zooming: false // turn of zooming. Doesn't work with bounding box
-      }
-    },
-    {
-      type: 'zingchart.maps',
-      options: {
-        name: 'ind',
-        panning: false, // turn of zooming. Doesn't work with bounding box
-        zooming: false,
-        scrolling: false,
-        style: {
-          tooltip: {
-            borderColor: '#000',
-            borderWidth: '2px',
-            fontSize: '18px'
-          },
-          borderColor: '#000',
-          borderWidth: '2px',
-          controls: {
-            visible: false, // turn of zooming. Doesn't work with bounding box
-
-          },
-          hoverState: {
-            alpha: .28
-          },
-          items: {
-            KA: {
-              tooltip: {
-                text: 'Karnataka has 2,851 monthly users total',
-                backgroundColor: '#ff5722'
-              },
-              backgroundColor: '#ff5722',
-              label: {
-                visible: true
-              }
-            },
-            MH: {
-              tooltip: {
-                text: 'Maharashtra has 2,683 monthly users total',
-                backgroundColor: '#ff9800'
-              },
-              backgroundColor: '#ff9800',
-              label: {
-                visible: true
-              }
-            },
-            TL: {
-              tooltip: {
-                text: 'Telangana has 1,494 monthly users total',
-                backgroundColor: '#00AE4D'
-              },
-              backgroundColor: '#00AE4D',
-              label: {
-                visible: true
-              }
-            },
-            TN: {
-              tooltip: {
-                text: 'Tamil Nadu has 1,968 monthly users total',
-                backgroundColor: '#00bcd4'
-              },
-              backgroundColor: '#00bcd4',
-              label: {
-                visible: true
-              }
-            }
-          },
-          label: { // text displaying. Like valueBox
-            fontSize: '15px',
-            visible: false
-          }
+        if (username == "pict123" && password == "pict123") {
+          window.location.href = "http://127.0.0.1:5500/graphs.html";
         }
       }
-    }
-  ]
-};
+      function getAicteInput() {
+        let username = document.getElementById("aicte-username").value;
+        let password = document.getElementById("aicte-password").value;
 
-zingchart.loadModules('maps,maps-ind,maps-world-countries');
-zingchart.render({
-  id: 'myChart',
-  data: chartConfig,
-  height: '100%',
-  width: '100%',
-});
-              </script>
-            </div>
-          </div>
-        </div> 
-        <!-- map ends -->
-        
-      <div class="card" id="reasons-graph">
-        <div class="card-body">
-          <h5 class="card-title">Reasons of Unemployability</h5>
-
-          <!-- Bar Chart -->
-          <canvas id="barChart" style="max-height: 400px"></canvas>
-          <script>
-            document.addEventListener("DOMContentLoaded", () => {
-              new Chart(document.querySelector("#barChart"), {
-                type: "bar",
-                data: {
-                  labels: [
-                    "Infrastructure",
-                    "Hand on learning experience",
-                    "Demand skills",
-                    "Job opportunities",
-                    "Training & placement resources",
-                    "Different career interest",
-                  ],
-                  datasets: [
-                    {
-                      label: "Bar Chart",
-                      data: [65, 59, 80, 81, 56, 55],
-                      backgroundColor: [
-                        "rgba(255, 99, 132, 0.2)",
-                        "rgba(255, 159, 64, 0.2)",
-                        "rgba(255, 205, 86, 0.2)",
-                        "rgba(75, 192, 192, 0.2)",
-                        "rgba(54, 162, 235, 0.2)",
-                        "rgba(153, 102, 255, 0.2)",
-                      ],
-                      borderColor: [
-                        "rgb(255, 99, 132)",
-                        "rgb(255, 159, 64)",
-                        "rgb(255, 205, 86)",
-                        "rgb(75, 192, 192)",
-                        "rgb(54, 162, 235)",
-                        "rgb(153, 102, 255)",
-                      ],
-                      borderWidth: 1,
-                    },
-                  ],
-                },
-                options: {
-                  scales: {
-                    y: {
-                      beginAtZero: true,
-                    },
-                  },
-                },
-              });
-            });
-          </script>
-          <!-- End Bar CHart -->
-        </div>
-      </div>
-        <!-- Unemployability percentage -->
-      
-
-        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
-
-        <!-- Vendor JS Files -->
-        <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/vendor/chart.js/chart.min.js"></script>
-        <script src="assets/vendor/echarts/echarts.min.js"></script>
-        <script src="assets/vendor/quill/quill.min.js"></script>
-        <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
-        <script src="assets/vendor/tinymce/tinymce.min.js"></script>
-        <script src="assets/vendor/php-email-form/validate.js"></script>
-
-        <!-- Template Main JS File -->
-        <script src="assets/js/main.js"></script>
-
-
-        <!-- pie chart script -->
-<!-- <script>
-  var ctx = document.getElementById("pieChart").getContext('2d');
-</script> -->
-
-<!-- <script type="text/javascript">
-  window.onload=function(){/*  ww  w  .j a va2s . com*/
-var data = [{
- data: [50, 55, 60, 33],
- labels: ["India", "China", "US", "Canada"],
- backgroundColor: [
-   "#4b77a9",
-   "#5f255f",
-   "#d21243",
-   "#B27200"
- ],
- borderColor: "#fff"
-}];
-var options = {
- tooltips: {
-   enabled: false
- },
- plugins: {
-   datalabels: {
-     formatter: (value, ctx) => {
-       let datasets = ctx.chart.data.datasets;
-       if (datasets.indexOf(ctx.dataset) === datasets.length - 1) {
-         let sum = datasets[0].data.reduce((a, b) => a + b, 0);
-         let percentage = Math.round((value / sum) * 100) + '%';
-         return percentage;
-       } else {
-         return percentage;
-       }
-     },
-     color: '#fff',
-   }
- }
-};
-var ctx = document.getElementById("pieChart").getContext('2d');
-var myChart = new Chart(ctx, {
- type: 'pie',
- data: {
-     datasets: data
-   },
-   options: options
- });
-    }
-
-      </script>  -->
-
-
-
-
-        <!-- 3D GRAPH SCRIPT -->
-        <script>
-         // Set up the chart
-const chart = new Highcharts.Chart({
-  chart: {
-    renderTo: 'container',
-    type: 'column',
-    options3d: {
-      enabled: true,
-      alpha: 4,
-      beta: 36,
-      depth: 100,
-      viewDistance: 25
-    }
-  },
-  title: {
-    text: 'Year vs Employability by diversity'
-  },
-  subtitle: {
-    // text: 'Test options by dragging the sliders below'
-  },
-  xAxis: {
-
-               categories: ['2014-15', '2015-16', '2016-17', '2017-18', '2018-19', '2020-21']
-            },
-       yAxis : {
-               categories: ['0M', '2M', '4M', '6M', '8M', '10M','12M','14M']
-       },
-  plotOptions: {
-    column: {
-      depth: 25,
-      grouping: false
-    }
-  },
-  series:[            
-              {
-                name: "Minority",
-                data: [0, 1, 1, 0, 1, 1],
-                stack: "c",
-              },
-              {
-                name: "Female",
-                data: [0, 2, 1, 2, 1, 1],
-                stack: "b",
-              },
-              {
-                name: "Male",
-                data: [1, 3, 2, 5, 2, 1],
-                stack: "a",
-              },
-              {
-                name: "Placed",
-                data: [1, 5, 3, 7, 3, 2],
-                stack: "c",
-              },
-
-            ]
-});
-
-function showValues() {
-  document.getElementById('alpha-value').innerHTML = chart.options.chart.options3d.alpha;
-  document.getElementById('beta-value').innerHTML = chart.options.chart.options3d.beta;
-  document.getElementById('depth-value').innerHTML = chart.options.chart.options3d.depth;
-}
-
-// Activate the sliders
-document.querySelectorAll('#sliders input').forEach(input => input.addEventListener('input', e => {
-  chart.options.chart.options3d[e.target.id] = parseFloat(e.target.value);
-  showValues();
-  chart.redraw(false);
-}));
-
-showValues();
-        </script>
-</body>
-
+        if (username == "aicte123" && password == "aicte123") {
+          window.location.href = "http://127.0.0.1:5500/aicte.html";
+        }
+      }
+    </script>
+  </body>
 </html>
