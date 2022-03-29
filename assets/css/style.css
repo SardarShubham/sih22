@@ -1343,3 +1343,53 @@ h6 {
   display: inline-block;
   margin: 100px auto;
 }
+
+footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  background-color: #d3e0f7;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.social-icons i:nth-child(1) {
+  font-size: 1.5rem;
+  color: rgb(0, 132, 255);
+}
+.social-icons i:nth-child(2) {
+  font-size: 1.5rem;
+  color: rgb(33, 147, 240);
+}
+.social-icons i:nth-child(3) {
+  font-size: 1.5rem;
+  color: blue;
+}
+.social-icons i:nth-child(4) {
+  font-size: 1.5rem;
+  color: orangered;
+}
+
+.carousel {
+  padding-top: 2rem;
+}
+.carousel img {
+  width: 80%;
+  height: 55rem;
+  background-size: cover;
+}
+
+.card p {
+  text-align: justify;
+  margin-top: 1rem;
+}
+#policies-container .card {
+  width: 100%;
+}
+main {
+  margin-bottom: 5rem;
+}
