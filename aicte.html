@@ -1117,7 +1117,7 @@
         <!-- Indian Map vs UnEmployability -->
         <div class="col-12">
           <div class="card">
-            <h5 class="card-title">States vs Unemployability {under construction}</h5>
+            <h5 class="card-title">States vs Unemployability</h5>
             <div id="myChart" class="chart--container">
               <a class="zc-ref" href="https://www.zingchart.com/">Powered by ZingChart</a>
               <script>
@@ -1129,7 +1129,7 @@
         bbox: [67.177, 36.494, 98.403, 6.965], // get bbox from zingchart.maps.getItemInfo('world-countries','ind');
         ignore: ['IND'], // ignore India because we are rendering a more specific India map below
         name: 'world.countries',
-        panning: false, // turn of zooming. Doesn't work with bounding box
+        // panning: false, // turn of zooming. Doesn't work with bounding box
         style: {
           tooltip: {
             borderColor: '#000',
@@ -1143,15 +1143,15 @@
             alpha: .28
           }
         },
-        zooming: false // turn of zooming. Doesn't work with bounding box
+        zooming: true // turn of zooming. Doesn't work with bounding box
       }
     },
     {
       type: 'zingchart.maps',
       options: {
         name: 'ind',
-        panning: false, // turn of zooming. Doesn't work with bounding box
-        zooming: false,
+        // panning: false, // turn of zooming. Doesn't work with bounding box
+        zooming: true,
         scrolling: false,
         style: {
           tooltip: {
@@ -1162,7 +1162,7 @@
           borderColor: '#000',
           borderWidth: '2px',
           controls: {
-            visible: false, // turn of zooming. Doesn't work with bounding box
+            visible: true, // turn of zooming. Doesn't work with bounding box
 
           },
           hoverState: {
@@ -1171,7 +1171,7 @@
           items: {
             KA: {
               tooltip: {
-                text: 'Karnataka has 2,851 monthly users total',
+                text: 'Karnataka has 2,851 Unemployed',
                 backgroundColor: '#ff5722'
               },
               backgroundColor: '#ff5722',
@@ -1181,7 +1181,7 @@
             },
             MH: {
               tooltip: {
-                text: 'Maharashtra has 2,683 monthly users total',
+                text: 'Maharashtra has 2,683 Unemployed',
                 backgroundColor: '#ff9800'
               },
               backgroundColor: '#ff9800',
@@ -1191,7 +1191,7 @@
             },
             TL: {
               tooltip: {
-                text: 'Telangana has 1,494 monthly users total',
+                text: 'Telangana has 1,494 Unemployed',
                 backgroundColor: '#00AE4D'
               },
               backgroundColor: '#00AE4D',
@@ -1201,7 +1201,321 @@
             },
             TN: {
               tooltip: {
-                text: 'Tamil Nadu has 1,968 monthly users total',
+                text: 'Tamil Nadu has 1,968 Unemployed',
+                backgroundColor: '#00bcd4'
+              },
+              backgroundColor: '#00bcd4',
+              label: {
+                visible: true
+              }
+            },
+            JK: {
+              tooltip: {
+                text: 'Jammu Kashmir has 1,968 Unemployed',
+                backgroundColor: '#FFFF00'
+              },
+              backgroundColor: '#FFFF00',
+              label: {
+                visible: true
+              }
+            },
+            RJ: {
+              tooltip: {
+                text: 'Rajasthan has 1,968 Unemployed',
+                backgroundColor: '#FFA07A '
+              },
+              backgroundColor: '#FFA07A ',
+              label: {
+                visible: true
+              }
+            }, GJ: {
+              tooltip: {
+                text: 'Gujarat has 1,968 Unemployed',
+                backgroundColor: '#FA8072'
+              },
+              backgroundColor: '#FA8072',
+              label: {
+                visible: true
+              }
+            }, MP: {
+              tooltip: {
+                text: 'Madhya Pradesh has 1,968 Unemployed',
+                backgroundColor: '#FA8072'
+              },
+              backgroundColor: '#FA8072',
+              label: {
+                visible: true
+              }
+            }, KA: {
+              tooltip: {
+                text: 'Karnataka has 1,968 Unemployed',
+                backgroundColor: '#ABEBC6'
+              },
+              backgroundColor: '#ABEBC6',
+              label: {
+                visible: true
+              }
+            }, AP: {
+              tooltip: {
+                text: 'Andhra Pradesh has 1,968 Unemployed',
+                backgroundColor: '#F7DC6F'
+              },
+              backgroundColor: '#F7DC6F',
+              label: {
+                visible: true
+              }
+            }, OR: {
+              tooltip: {
+                text: 'Orissa has 1,968 Unemployed',
+                backgroundColor: '#95A5A6'
+              },
+              backgroundColor: '#95A5A6',
+              label: {
+                visible: true
+              }
+            }, UP: {
+              tooltip: {
+                text: 'Uttar Pradesh has 1,968 Unemployed',
+                backgroundColor: '#EBDEF0'
+              },
+              backgroundColor: '#EBDEF0',
+              label: {
+                visible: true
+              }
+            }
+            , PB: {
+              tooltip: {
+                text: 'Punjab has 1,968 Unemployed',
+                backgroundColor: '#FDEDEC'
+              },
+              backgroundColor: '#FDEDEC',
+              label: {
+                visible: true
+              }
+            }
+            , DL: {
+              tooltip: {
+                text: 'Delhi has 1,968 Unemployed',
+                backgroundColor: '#ABB2B9'
+              },
+              backgroundColor: '#ABB2B9',
+              label: {
+                visible: true
+              }
+            }
+            , DD: {
+              tooltip: {
+                text: 'Daman & Diu has 1,968 Unemployed',
+                backgroundColor: '#00bcd4'
+              },
+              backgroundColor: '#00bcd4',
+              label: {
+                visible: true
+              }
+            }
+            , UT: {
+              tooltip: {
+                text: 'Tamil Nadu has 1,968 Unemployed',
+                backgroundColor: '#00bcd4'
+              },
+              backgroundColor: '#00bcd4',
+              label: {
+                visible: true
+              }
+            }
+            , CH: {
+              tooltip: {
+                text: 'Tamil Nadu has 1,968 Unemployed',
+                backgroundColor: '#00bcd4'
+              },
+              backgroundColor: '#00bcd4',
+              label: {
+                visible: true
+              }
+            }
+            , HP: {
+              tooltip: {
+                text: 'Himachal Pradesh has 1,968 Unemployed',
+                backgroundColor: '#8E44AD'
+              },
+              backgroundColor: '#8E44AD',
+              label: {
+                visible: true
+              }
+            }
+            , JH: {
+              tooltip: {
+                text: 'Tamil Nadu has 1,968 Unemployed',
+                backgroundColor: '#00bcd4'
+              },
+              backgroundColor: '#00bcd4',
+              label: {
+                visible: true
+              }
+            }
+            , BR: {
+              tooltip: {
+                text: 'Tamil Nadu has 1,968 Unemployed',
+                backgroundColor: '#00bcd4'
+              },
+              backgroundColor: '#00bcd4',
+              label: {
+                visible: true
+              }
+            }
+            , UP: {
+              tooltip: {
+                text: 'Tamil Nadu has 1,968 Unemployed',
+                backgroundColor: '#00bcd4'
+              },
+              backgroundColor: '#00bcd4',
+              label: {
+                visible: true
+              }
+            }
+            , CT: {
+              tooltip: {
+                text: 'Tamil Nadu has 1,968 Unemployed',
+                backgroundColor: '#00bcd4'
+              },
+              backgroundColor: '#00bcd4',
+              label: {
+                visible: true
+              }
+            }
+            , WB: {
+              tooltip: {
+                text: 'Tamil Nadu has 1,968 Unemployed',
+                backgroundColor: '#00bcd4'
+              },
+              backgroundColor: '#00bcd4',
+              label: {
+                visible: true
+              }
+            }
+
+
+            , KL: {
+              tooltip: {
+                text: 'Tamil Nadu has 1,968 Unemployed',
+                backgroundColor: '#00bcd4'
+              },
+              backgroundColor: '#00bcd4',
+              label: {
+                visible: true
+              }
+            }
+            , PY: {
+              tooltip: {
+                text: 'Tamil Nadu has 1,968 Unemployed',
+                backgroundColor: '#00bcd4'
+              },
+              backgroundColor: '#00bcd4',
+              label: {
+                visible: true
+              }
+            }
+            , SK: {
+              tooltip: {
+                text: 'Tamil Nadu has 1,968 Unemployed',
+                backgroundColor: '#00bcd4'
+              },
+              backgroundColor: '#00bcd4',
+              label: {
+                visible: true
+              }
+            }
+            , AS: {
+              tooltip: {
+                text: 'Tamil Nadu has 1,968 Unemployed',
+                backgroundColor: '#00bcd4'
+              },
+              backgroundColor: '#00bcd4',
+              label: {
+                visible: true
+              }
+            }
+            , ML: {
+              tooltip: {
+                text: 'Tamil Nadu has 1,968 Unemployed',
+                backgroundColor: '#00bcd4'
+              },
+              backgroundColor: '#00bcd4',
+              label: {
+                visible: true
+              }
+            }
+
+
+            , NL: {
+              tooltip: {
+                text: 'Tamil Nadu has 1,968 Unemployed',
+                backgroundColor: '#00bcd4'
+              },
+              backgroundColor: '#00bcd4',
+              label: {
+                visible: true
+              }
+            }
+            , AR: {
+              tooltip: {
+                text: 'Tamil Nadu has 1,968 Unemployed',
+                backgroundColor: '#00bcd4'
+              },
+              backgroundColor: '#00bcd4',
+              label: {
+                visible: true
+              }
+            }
+            , MN: {
+              tooltip: {
+                text: 'Tamil Nadu has 1,968 Unemployed',
+                backgroundColor: '#00bcd4'
+              },
+              backgroundColor: '#00bcd4',
+              label: {
+                visible: true
+              }
+            }
+
+
+            , MZ: {
+              tooltip: {
+                text: 'Tamil Nadu has 1,968 Unemployed',
+                backgroundColor: '#00bcd4'
+              },
+              backgroundColor: '#00bcd4',
+              label: {
+                visible: true
+              }
+            }
+
+            , DD: {
+              tooltip: {
+                text: 'Tamil Nadu has 1,968 Unemployed',
+                backgroundColor: '#00bcd4'
+              },
+              backgroundColor: '#00bcd4',
+              label: {
+                visible: true
+              }
+            }
+
+
+            , TR: {
+              tooltip: {
+                text: 'Tamil Nadu has 1,968 Unemployed',
+                backgroundColor: '#00bcd4'
+              },
+              backgroundColor: '#00bcd4',
+              label: {
+                visible: true
+              }
+            }
+
+            , HR: {
+              tooltip: {
+                text: 'Tamil Nadu has 1,968 Unemployed',
                 backgroundColor: '#00bcd4'
               },
               backgroundColor: '#00bcd4',
@@ -1210,6 +1524,8 @@
               }
             }
           },
+          
+          
           label: { // text displaying. Like valueBox
             fontSize: '15px',
             visible: false
