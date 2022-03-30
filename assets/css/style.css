@@ -1345,12 +1345,12 @@ h6 {
   margin: 100px auto;
 }
 
-.nav-link{
-  color:#222;
+.nav-link {
+  color: #222;
   /* font-weight: 600; */
 }
 
-.nav-link:active{
+.nav-link:active {
   font-weight: 600;
 }
 
@@ -1402,4 +1402,67 @@ footer {
 }
 main {
   margin-bottom: 5rem;
+}
+
+/* .color-range css starts */
+.color-range {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* margin: 0 0 3rem 15rem; */
+}
+.color-range div {
+  display: inline-block;
+}
+.color-range ul {
+  list-style: none;
+}
+.color-range ul b {
+  margin-left: 0.5rem;
+}
+/* 0-10 % -#F5B7B1
+10-20 % -#EC7063
+20-30 % -#E74C3C
+30-40 % -#F5B7B1
+>40 % -#CB4335  */
+.range-1 {
+  background-color: #f5b7b1;
+  width: 15px;
+  height: 15px;
+}
+.range-2 {
+  background-color: #ec7063;
+  width: 15px;
+  height: 15px;
+}
+
+.range-3 {
+  background-color: #e74c3c;
+  width: 15px;
+  height: 15px;
+}
+
+.range-4 {
+  background-color: #cb4335;
+  width: 15px;
+  height: 15px;
+}
+
+.range-5 {
+  background-color: #cb4335;
+  width: 15px;
+  height: 15px;
+}
+/* .color-range css ends */
+
+.india-avg {
+  border: 1px solid brown;
+  border-radius: 50%;
+  background-color: goldenrod;
+  color: brown;
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
 }
